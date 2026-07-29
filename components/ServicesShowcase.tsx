@@ -3,11 +3,15 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SERVICE_SHOWCASE } from "@/lib/form-helpers";
 
-const SHOWCASE_SERVICE_KEY = {
-  homes: "home",
-  offices: "office",
-  windows: "windows",
-  construction: "construction",
+const SHOWCASE_META = {
+  homes: { serviceKey: "home", aspect: "aspect-[4/3]", position: "object-center" },
+  offices: { serviceKey: "office", aspect: "aspect-[4/3]", position: "object-center" },
+  windows: { serviceKey: "windows", aspect: "aspect-[3/4]", position: "object-top" },
+  construction: {
+    serviceKey: "construction",
+    aspect: "aspect-[3/4]",
+    position: "object-center",
+  },
 } as const;
 
 export async function ServicesShowcase() {
@@ -17,21 +21,27 @@ export async function ServicesShowcase() {
   return (
     <section className="py-16 sm:py-20">
       <div className="section-shell grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
-        <div className="grid grid-cols-2 gap-3 sm:gap-4">
-          {SERVICE_SHOWCASE.map((item) => (
-            <figure
-              key={item.id}
-              className="relative aspect-square overflow-hidden rounded-2xl border border-brand-line bg-brand-mist shadow-[0_10px_28px_rgba(11,79,138,0.08)]"
-            >
-              <Image
-                src={item.src}
-                alt={ts(`${SHOWCASE_SERVICE_KEY[item.id]}.title`)}
-                fill
-                className="object-cover object-center"
-                sizes="(max-width: 1024px) 50vw, 28vw"
-              />
-            </figure>
-          ))}
+        <div className="grid grid-cols-2 items-start gap-3 sm:gap-4">
+          {SERVICE_SHOWCASE.map((item, i) => {
+            const meta = SHOWCASE_META[item.id];
+            return (
+              <figure
+                key={item.id}
+                className={`group relative overflow-hidden rounded-2xl border border-brand-line bg-brand-mist shadow-[0_10px_28px_rgba(11,79,138,0.08)] ${meta.aspect} ${
+                  i % 2 === 1 ? "sm:mt-8" : ""
+                }`}
+              >
+                <Image
+                  src={item.src}
+                  alt={ts(`${meta.serviceKey}.title`)}
+                  fill
+                  quality={88}
+                  className={`object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] ${meta.position}`}
+                  sizes="(max-width: 1024px) 50vw, 28vw"
+                />
+              </figure>
+            );
+          })}
         </div>
 
         <div>
