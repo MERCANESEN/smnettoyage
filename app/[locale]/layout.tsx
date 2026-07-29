@@ -39,8 +39,8 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     icons: {
-      icon: "/logo-sm-nettoyage.png",
-      apple: "/logo-sm-nettoyage.png",
+      icon: "/logo-sm-nettoyage-clear.png",
+      apple: "/logo-sm-nettoyage-clear.png",
     },
   };
 }

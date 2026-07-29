@@ -34,11 +34,12 @@ export function Logo({ className = "", size = "header" }: LogoProps) {
       aria-label="SM Nettoyage"
     >
       <Image
-        src="/logo-sm-nettoyage.png"
+        src="/logo-sm-nettoyage-clear.png"
         alt="SM Nettoyage — Propreté, Fiabilité, Qualité"
         width={dimensions.width}
         height={dimensions.height}
         priority={size === "header"}
+        unoptimized
         className={`${dimensions.className} object-contain`}
       />
     </Link>

@@ -30,14 +30,16 @@ export const PHONE_COUNTRY_CODES = [
 
 export const DEFAULT_PHONE_COUNTRY = "+41";
 
+/** Hero slides with logo-safe object positions (chest / back / bottom logo). */
 export const HOME_SLIDES = [
-  "/slider/hero-1.png",
-  "/slider/hero-2.png",
-  "/slider/hero-3.png",
-  "/slider/hero-4.png",
-  "/slider/hero-5.png",
-  "/slider/hero-6.png",
-  "/slider/hero-7.png",
+  { src: "/slider/hero-1.png", position: "object-[center_42%]" },
+  { src: "/slider/hero-2.png", position: "object-[28%_40%]" },
+  { src: "/slider/hero-3.png", position: "object-[55%_38%]" },
+  { src: "/slider/hero-4.png", position: "object-[38%_42%]" },
+  { src: "/slider/hero-5.png", position: "object-[48%_45%]" },
+  // Before/After — brand logo sits on the bottom edge; keep it in frame
+  { src: "/slider/hero-6.png", position: "object-[center_bottom]" },
+  { src: "/slider/hero-7.png", position: "object-[18%_45%]" },
 ] as const;
 
 export const SERVICE_SHOWCASE = [
