@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "title": "SM Nettoyage — Services de nettoyage professionnels",
+    "description": "Où que vous soyez, nous serons là — nettoyage professionnel pour maisons, bureaux, vitres, après travaux et déménagements."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "booking": "Réserver un nettoyage",
+    "joinUs": "Nous rejoindre",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "common": {
+    "bookNow": "Réserver",
+    "learnMore": "En savoir plus",
+    "comingSoon": "Bientôt disponible",
+    "companyName": "SM Nettoyage",
+    "email": "info@smnettoyage.ch",
+    "hoursLabel": "Horaires du service client",
+    "hoursValue": "07:00 – 17:00",
+    "addressLabel": "Adresse",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "E-mail",
+    "followUs": "Suivez-nous",
+    "required": "Obligatoire",
+    "optional": "Facultatif",
+    "submit": "Envoyer",
+    "sending": "Envoi en cours…",
+    "successTitle": "Merci !",
+    "successBody": "Votre message a bien été envoyé. Nous vous répondrons bientôt. Vous pouvez aussi nous écrire à {email}.",
+    "errorBody": "Une erreur s’est produite. Réessayez ou écrivez-nous directement.",
+    "sendAnother": "Envoyer un autre message"
+  },
+  "languageOffer": {
+    "message": "Nous avons détecté que la langue de votre navigateur est {language}. Souhaitez-vous changer ?",
+    "switch": "Passer en {code}",
+    "stay": "Rester en français"
+  },
+  "home": {
+    "heroTagline": "La propreté, notre priorité — chaque espace, à chaque fois",
+    "heroSecondary": "Propreté • Fiabilité • Qualité",
+    "introTitle": "Un nettoyage réalisé avec soin",
+    "introBody": "SM Nettoyage propose un nettoyage fiable et professionnel pour maisons et lieux de travail. De l’entretien quotidien aux grands nettoyages après travaux ou déménagement, notre équipe formée arrive à l’heure et laisse des espaces frais, impeccables et prêts à vivre.",
+    "ctaQuote": "Obtenir un devis gratuit",
+    "servicesTitle": "Nos services",
+    "servicesSubtitle": "Des solutions de nettoyage flexibles, adaptées à votre espace et à votre emploi du temps.",
+    "reviewsTitle": "Avis Google",
+    "reviewsSubtitle": "Retours authentiques de clients sur Google.",
+    "reviewsNote": "",
+    "reviewsLoading": "Chargement des avis Google…",
+    "reviewsPride": "Nous sommes fiers des retours de nos clients — découvrez nos derniers avis sur Google !",
+    "reviewsUnavailable": "Nous sommes fiers des retours de nos clients — découvrez nos derniers avis sur Google !",
+    "reviewsOnGoogle": "Voir les avis sur Google",
+    "reviewsCount": "{count} avis",
+    "socialTitle": "Restez connectés",
+    "sliderTitle": "Notre travail en images",
+    "sliderSubtitle": "Nettoyage professionnel pour maisons, bureaux et chantiers.",
+    "sliderPrev": "Photo précédente",
+    "sliderNext": "Photo suivante",
+    "showcase": {
+      "title": "Des services de nettoyage pour chaque espace",
+      "subtitle": "Des espaces plus propres grâce à notre système de rotation Detail-Clean",
+      "body": "Chez SM Nettoyage, nous suivons un système de rotation structuré pour un nettoyage en profondeur de tous nos services : maisons, bureaux, vitres, après travaux et avant/après déménagement. Cela garantit une hygiène constante et soignée dans chaque espace, adaptée à vos besoins. Avec SM Nettoyage, la propreté n’est pas occasionnelle — elle est garantie.",
+      "cta": "Découvrir notre système",
+      "labels": {
+        "homes": "Maisons",
+        "offices": "Bureaux",
+        "windows": "Vitres",
+        "construction": "Après travaux"
+      }
+    }
+  },
+  "services": {
+    "home": {
+      "title": "Nettoyage de maison",
+      "short": "Un nettoyage soigné pour appartements et maisons — cuisine, salles de bain, pièces de vie et plus.",
+      "long": "Nettoyage régulier ou ponctuel à domicile : dépoussiérage, sols, cuisine, salles de bain et surfaces fréquemment touchées. Nous nous adaptons à vos préférences pour un intérieur toujours frais."
+    },
+    "office": {
+      "title": "Nettoyage de bureaux",
+      "short": "Un nettoyage professionnel des lieux de travail pour des espaces accueillants et productifs.",
+      "long": "Nettoyage planifié des bureaux, salles de réunion, cuisines et espaces communs. Un service discret et fiable, en dehors ou pendant vos heures de travail."
+    },
+    "windows": {
+      "title": "Nettoyage de vitres",
+      "short": "Des vitres sans traces pour plus de lumière et un bien immobilier qui brille.",
+      "long": "Nettoyage intérieur et extérieur des vitres pour particuliers et professionnels. Verre clair, cadres propres, et une pièce plus lumineuse."
+    },
+    "construction": {
+      "title": "Nettoyage après travaux",
+      "short": "Un grand nettoyage post-rénovation pour enlever poussière, débris et résidus.",
+      "long": "Nettoyage détaillé après construction ou rénovation — poussière fine, résidus, sols et équipements — pour profiter de l’espace fini sans le chantier."
+    },
+    "moving": {
+      "title": "Nettoyage avant / après déménagement",
+      "short": "Nettoyage de maison avant l’emménagement ou après le départ — un départ et une arrivée propres.",
+      "long": "Grand nettoyage des maisons avant remise des clés ou après arrivée. Espaces vides, placards, sols et salles de bain pour un échange de clés en toute confiance."
+    }
+  },
+  "servicesPage": {
+    "title": "Nos services",
+    "subtitle": "Choisissez le nettoyage adapté à vos besoins — puis réservez en quelques clics.",
+    "bookCta": "Réserver"
+  },
+  "about": {
+    "title": "À propos",
+    "subtitle": "Un partenaire de nettoyage de confiance.",
+    "storyTitle": "Qui sommes-nous",
+    "storyBody": "SM Nettoyage repose sur une promesse simple : être là où vous êtes, quand vous en avez besoin, et prendre soin de votre espace comme du nôtre. Professionnels formés, planning fiable et souci du détail — Livraison et soin à chaque visite.",
+    "valuesTitle": "Nos valeurs",
+    "value1Title": "Fiabilité",
+    "value1Body": "Communication claire, ponctualité et qualité constante sur lesquelles vous pouvez compter.",
+    "value2Title": "Soin",
+    "value2Body": "Respect de votre maison, de votre lieu de travail et de vos biens — chaque surface, à chaque fois.",
+    "value3Title": "Flexibilité",
+    "value3Body": "Du nettoyage ponctuel aux passages réguliers, nous nous adaptons à votre vie et à votre activité.",
+    "ctaTitle": "Prêt pour un espace plus propre ?",
+    "ctaBody": "Dites-nous ce dont vous avez besoin — nous préparons un devis gratuit."
+  },
+  "booking": {
+    "title": "Réserver un nettoyage",
+    "subtitle": "Indiquez votre espace et vos disponibilités. Nous vous recontacterons pour confirmer.",
+    "formTitle": "Demande de réservation",
+    "name": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "service": "Type de service",
+    "servicePlaceholder": "Choisir un service",
+    "street": "Rue et numéro",
+    "plz": "NPA",
+    "town": "Localité",
+    "addressExtra": "Adresse complémentaire",
+    "addressExtraPlaceholder": "optional",
+    "date": "Date souhaitée",
+    "time": "Heure souhaitée",
+    "timePlaceholder": "Choisir une heure",
+    "notes": "Remarques",
+    "notesPlaceholder": "Codes d’accès, animaux, demandes particulières…",
+    "submit": "Demander une réservation",
+    "mailSubject": "Demande de réservation — SM Nettoyage",
+    "errors": {
+      "name": "Veuillez indiquer votre nom",
+      "email": "Veuillez indiquer un e-mail valide",
+      "phone": "Veuillez indiquer un numéro de téléphone",
+      "service": "Veuillez choisir un service",
+      "street": "Veuillez indiquer la rue et le numéro",
+      "plz": "Veuillez indiquer un NPA suisse à 4 chiffres",
+      "town": "Veuillez indiquer la localité",
+      "date": "Veuillez choisir une date",
+      "time": "Veuillez choisir une heure entre 07:00 et 17:00"
+    }
+  },
+  "joinUs": {
+    "title": "Nous rejoindre",
+    "subtitle": "Grandissez avec une équipe qui valorise fiabilité, soin et professionnalisme.",
+    "introTitle": "Carrières chez SM Nettoyage",
+    "introBody": "Nous recherchons des professionnels du nettoyage motivés, fiers de leur travail. Si vous êtes fiable, minutieux et aimez faire briller les espaces, contactez-nous.",
+    "benefitsTitle": "Pourquoi nous rejoindre",
+    "benefit1": "Une équipe solidaire",
+    "benefit2": "Horaires flexibles lorsque c’est possible",
+    "benefit3": "Formation et attentes claires",
+    "benefit4": "Des perspectives d’évolution",
+    "formTitle": "Postuler ou se présenter",
+    "name": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "role": "Poste souhaité",
+    "rolePlaceholder": "ex. Agent d’entretien, Chef d’équipe",
+    "message": "Message / note CV",
+    "messagePlaceholder": "Parlez-nous de votre expérience et de vos disponibilités…",
+    "submit": "Envoyer la candidature",
+    "mailSubject": "Candidature — SM Nettoyage",
+    "errors": {
+      "name": "Veuillez indiquer votre nom",
+      "email": "Veuillez indiquer un e-mail valide",
+      "phone": "Veuillez indiquer un numéro de téléphone",
+      "role": "Veuillez indiquer un poste",
+      "message": "Veuillez ajouter un court message"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Nous sommes là pour vous — demandez un devis gratuit ou posez une question.",
+    "infoTitle": "Nous contacter",
+    "formTitle": "Envoyer un message",
+    "name": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "message": "Message",
+    "messagePlaceholder": "Comment pouvons-nous vous aider ?",
+    "submit": "Envoyer le message",
+    "mailSubject": "Contact — SM Nettoyage",
+    "errors": {
+      "name": "Veuillez indiquer votre nom",
+      "email": "Veuillez indiquer un e-mail valide",
+      "phone": "Veuillez indiquer un numéro de téléphone valide",
+      "message": "Veuillez indiquer votre message"
+    }
+  },
+  "footer": {
+    "tagline": "Livraison et soin",
+    "quickLinks": "Liens rapides",
+    "rights": "© {year} SM Nettoyage. Tous droits réservés."
+  },
+  "testimonials": {
+    "items": [
+      {
+        "name": "Sophie M.",
+        "text": "Ponctuels, minutieux et agréables. Notre appartement n’a jamais été aussi propre.",
+        "rating": 5
+      },
+      {
+        "name": "Luca R.",
+        "text": "Le nettoyage après travaux était parfait — plus aucune poussière.",
+        "rating": 5
+      },
+      {
+        "name": "Anna K.",
+        "text": "Un nettoyage de bureaux fiable chaque semaine. Professionnels du début à la fin.",
+        "rating": 5
+      }
+    ]
+  }
+}

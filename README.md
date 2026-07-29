@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SM Nettoyage — smnettoyage.ch
 
-## Getting Started
-
-First, run the development server:
+## Local development (instant preview)
 
 ```bash
+npm install
+cp .env.example .env.local   # then fill SMTP values
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open **http://localhost:3000** — default language is French (`/fr`).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Forms / email (required for Hostinger Node)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Contact and booking forms send email via **Nodemailer + SMTP**.
 
-## Learn More
+1. Copy `.env.example` → `.env.local` (local) or set the same vars in Hostinger
+2. Use your mailbox SMTP (Hostinger example):
 
-To learn more about Next.js, take a look at the following resources:
+```
+SMTP_HOST=smtp.hostinger.com
+SMTP_PORT=465
+SMTP_SECURE=true
+SMTP_USER=info@smnettoyage.ch
+SMTP_PASS=...
+CONTACT_TO_EMAIL=info@smnettoyage.ch
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy on Hostinger (Node.js app)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Forms need a **Node.js** host (not static File Manager upload).
 
-## Deploy on Vercel
+```bash
+npm run build
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Set the SMTP environment variables in the Hostinger panel.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact details
+
+- Address: Rue des Agas, 1635 La Tour-de-Trême, Switzerland  
+- Phone: +41 78 230 79 54  
+- Email: info@smnettoyage.ch

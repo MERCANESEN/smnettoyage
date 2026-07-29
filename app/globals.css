@@ -1,26 +1,189 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brand-deep: #0b4f8a;
+  --brand-sky: #2e8bc0;
+  --brand-mist: #e8f4fb;
+  --brand-foam: #f5fafd;
+  --brand-ink: #1a2b3c;
+  --brand-muted: #5a6f82;
+  --brand-line: #d0e3f0;
+  --background: var(--brand-foam);
+  --foreground: var(--brand-ink);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-sky: var(--brand-sky);
+  --color-brand-mist: var(--brand-mist);
+  --color-brand-foam: var(--brand-foam);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-muted: var(--brand-muted);
+  --color-brand-line: var(--brand-line);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-fraunces);
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(46, 139, 192, 0.16), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 90% 0%, rgba(11, 79, 138, 0.1), transparent 50%),
+    linear-gradient(180deg, #f5fafd 0%, #eef6fb 45%, #f8fbfd 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(46, 139, 192, 0.25);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-shine {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out both;
+}
+
+.animate-fade-up-delay {
+  animation: fade-up 0.8s ease-out 0.15s both;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.8s ease-out 0.3s both;
+}
+
+.hero-wash {
+  background:
+    linear-gradient(135deg, rgba(11, 79, 138, 0.92) 0%, rgba(46, 139, 192, 0.85) 55%, rgba(11, 79, 138, 0.88) 100%),
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.18), transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.12), transparent 35%);
+  background-size: 200% 200%, auto, auto;
+  animation: soft-shine 12s ease-in-out infinite;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--brand-deep);
+  color: white;
+  padding: 0.85rem 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 10px 24px rgba(11, 79, 138, 0.22);
+}
+
+.btn-primary:hover {
+  background: #093f6e;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(11, 79, 138, 0.28);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  padding: 0.85rem 1.4rem;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+}
+
+.section-shell {
+  margin-inline: auto;
+  width: min(1120px, calc(100% - 2rem));
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brand-ink);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  border: 1px solid var(--brand-line);
+  border-radius: 0.5rem;
+  background: white;
+  color: var(--brand-ink);
+  padding: 0.75rem 0.9rem;
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--brand-sky);
+  box-shadow: 0 0 0 3px rgba(46, 139, 192, 0.18);
+}
+
+.form-error {
+  font-size: 0.8rem;
+  color: #b42318;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay,
+  .animate-fade-up-delay-2,
+  .hero-wash {
+    animation: none;
+  }
+}
+
+/* Locale-aware booking calendar (react-day-picker) */
+.rdp-root {
+  --rdp-accent-color: #0b4f8a;
+  --rdp-accent-background-color: #e8f4fb;
+  --rdp-day-height: 2.25rem;
+  --rdp-day-width: 2.25rem;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
 }

@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "title": "SM Nettoyage — Servizi di pulizia professionali",
+    "description": "Ovunque siate, ci saremo — pulizie professionali per case, uffici, vetri, post-cantiere e traslochi."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "services": "Servizi",
+    "booking": "Prenota una pulizia",
+    "joinUs": "Lavora con noi",
+    "contact": "Contatti",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu"
+  },
+  "common": {
+    "bookNow": "Prenota ora",
+    "learnMore": "Scopri di più",
+    "comingSoon": "Presto disponibile",
+    "companyName": "SM Nettoyage",
+    "email": "info@smnettoyage.ch",
+    "hoursLabel": "Orari del servizio clienti",
+    "hoursValue": "07:00 – 17:00",
+    "addressLabel": "Indirizzo",
+    "phoneLabel": "Telefono",
+    "emailLabel": "E-mail",
+    "followUs": "Seguici",
+    "required": "Obbligatorio",
+    "optional": "Facoltativo",
+    "submit": "Invia",
+    "sending": "Invio in corso…",
+    "successTitle": "Grazie!",
+    "successBody": "Il messaggio è stato inviato. Ti risponderemo al più presto. Puoi anche scriverci a {email}.",
+    "errorBody": "Si è verificato un errore. Riprova o scrivici direttamente.",
+    "sendAnother": "Invia un altro messaggio"
+  },
+  "languageOffer": {
+    "message": "Abbiamo rilevato che la lingua del browser è {language}. Vuoi cambiare?",
+    "switch": "Passa a {code}",
+    "stay": "Resta in francese"
+  },
+  "home": {
+    "heroTagline": "La pulizia è la nostra priorità — ogni spazio, ogni volta",
+    "heroSecondary": "Pulizia • Affidabilità • Qualità",
+    "introTitle": "Pulizia fatta con cura",
+    "introBody": "SM Nettoyage offre pulizie affidabili e professionali per case e luoghi di lavoro. Dalla manutenzione quotidiana alle pulizie approfondite dopo cantiere o trasloco, il nostro team formato arriva in orario e lascia ambienti freschi, impeccabili e pronti da vivere.",
+    "ctaQuote": "Richiedi un preventivo gratuito",
+    "servicesTitle": "I nostri servizi",
+    "servicesSubtitle": "Soluzioni di pulizia flessibili, su misura per i vostri spazi e i vostri orari.",
+    "reviewsTitle": "Recensioni Google",
+    "reviewsSubtitle": "Feedback autentici dei clienti su Google.",
+    "reviewsNote": "",
+    "reviewsLoading": "Caricamento delle recensioni Google…",
+    "reviewsPride": "Siamo orgogliosi del feedback dei nostri clienti — scopri le nostre ultime recensioni su Google!",
+    "reviewsUnavailable": "Siamo orgogliosi del feedback dei nostri clienti — scopri le nostre ultime recensioni su Google!",
+    "reviewsOnGoogle": "Vedi le recensioni su Google",
+    "reviewsCount": "{count} recensioni",
+    "socialTitle": "Restiamo in contatto",
+    "sliderTitle": "Il nostro lavoro in immagini",
+    "sliderSubtitle": "Pulizie professionali per case, uffici e cantieri.",
+    "sliderPrev": "Foto precedente",
+    "sliderNext": "Foto successiva",
+    "showcase": {
+      "title": "Servizi di pulizia per ogni spazio",
+      "subtitle": "Spazi più puliti con il nostro sistema di rotazione Detail-Clean",
+      "body": "In SM Nettoyage seguiamo un sistema di rotazione strutturato per la pulizia approfondita di tutti i servizi: case, uffici, vetri, post-cantiere e pre/post trasloco. Così garantiamo un’igiene costante e accurata in ogni ambiente, su misura per le vostre esigenze. Con SM Nettoyage la pulizia non è occasionale: è garantita.",
+      "cta": "Scopri il nostro sistema",
+      "labels": {
+        "homes": "Case",
+        "offices": "Uffici",
+        "windows": "Vetri",
+        "construction": "Post-cantiere"
+      }
+    }
+  },
+  "services": {
+    "home": {
+      "title": "Pulizia domestica",
+      "short": "Pulizia accurata per appartamenti e case — cucina, bagni, soggiorni e altro.",
+      "long": "Pulizia domestica regolare o occasionale: spolveratura, pavimenti, cucina, bagni e superfici di contatto. Ci adattiamo alle vostre preferenze."
+    },
+    "office": {
+      "title": "Pulizia uffici",
+      "short": "Pulizia professionale degli ambienti di lavoro per spazi produttivi e accoglienti.",
+      "long": "Pulizia programmata di scrivanie, sale riunioni, cucine e aree comuni. Servizio discreto e affidabile, fuori o durante l’orario di lavoro."
+    },
+    "windows": {
+      "title": "Pulizia vetri",
+      "short": "Vetri senza aloni per più luce e una proprietà che brilla.",
+      "long": "Pulizia interna ed esterna dei vetri per privati e aziende. Vetro limpido, telai puliti, ambienti più luminosi."
+    },
+    "construction": {
+      "title": "Pulizia post-cantiere",
+      "short": "Pulizia dopo ristrutturazione per rimuovere polvere, detriti e residui.",
+      "long": "Pulizia dettagliata dopo lavori edili o ristrutturazioni — polvere fine, residui, pavimenti e finiture — per godersi lo spazio finito senza il cantiere."
+    },
+    "moving": {
+      "title": "Pulizia pre / post trasloco",
+      "short": "Pulizia della casa prima dell’ingresso o dopo la partenza — un inizio pulito a ogni indirizzo.",
+      "long": "Pulizia approfondita delle case prima della consegna delle chiavi o dopo l’arrivo. Ambienti vuoti, armadi, pavimenti e bagni per uno scambio chiavi sereno."
+    }
+  },
+  "servicesPage": {
+    "title": "I nostri servizi",
+    "subtitle": "Scegliete la pulizia adatta alle vostre esigenze — poi prenotate in pochi clic.",
+    "bookCta": "Prenota ora"
+  },
+  "about": {
+    "title": "Chi siamo",
+    "subtitle": "Un partner di pulizia di cui potete fidarvi.",
+    "storyTitle": "Chi siamo",
+    "storyBody": "SM Nettoyage nasce da una promessa semplice: essere dove siete, quando ci serve, e curare il vostro spazio come fosse il nostro. Professionisti formati, pianificazione affidabile e attenzione ai dettagli — Consegna e cura a ogni intervento.",
+    "valuesTitle": "I nostri valori",
+    "value1Title": "Affidabilità",
+    "value1Body": "Comunicazione chiara, puntualità e qualità costante su cui potete contare.",
+    "value2Title": "Cura",
+    "value2Body": "Rispetto per la vostra casa, il luogo di lavoro e i vostri beni — ogni superficie, ogni volta.",
+    "value3Title": "Flessibilità",
+    "value3Body": "Dalle pulizie una tantum agli interventi ricorrenti, ci adattiamo alla vostra vita e alla vostra attività.",
+    "ctaTitle": "Pronti per uno spazio più pulito?",
+    "ctaBody": "Diteci di cosa avete bisogno — prepariamo un preventivo gratuito."
+  },
+  "booking": {
+    "title": "Prenota una pulizia",
+    "subtitle": "Indicateci lo spazio e l’orario preferito. Vi ricontatteremo per confermare.",
+    "formTitle": "Richiesta di prenotazione",
+    "name": "Nome completo",
+    "email": "E-mail",
+    "phone": "Telefono",
+    "service": "Tipo di servizio",
+    "servicePlaceholder": "Seleziona un servizio",
+    "street": "Via e numero",
+    "plz": "NPA",
+    "town": "Città",
+    "addressExtra": "Indirizzo aggiuntivo",
+    "addressExtraPlaceholder": "optional",
+    "date": "Data preferita",
+    "time": "Ora preferita",
+    "timePlaceholder": "Seleziona un orario",
+    "notes": "Note",
+    "notesPlaceholder": "Codici di accesso, animali, richieste particolari…",
+    "submit": "Richiedi prenotazione",
+    "mailSubject": "Richiesta di prenotazione — SM Nettoyage",
+    "errors": {
+      "name": "Inserite il vostro nome",
+      "email": "Inserite un’e-mail valida",
+      "phone": "Inserite un numero di telefono",
+      "service": "Selezionate un servizio",
+      "street": "Inserite via e numero civico",
+      "plz": "Inserite un NPA svizzero a 4 cifre",
+      "town": "Inserite la città",
+      "date": "Scegliete una data",
+      "time": "Scegliete un orario tra le 07:00 e le 17:00"
+    }
+  },
+  "joinUs": {
+    "title": "Lavora con noi",
+    "subtitle": "Crescete con un team che valorizza affidabilità, cura e professionalità.",
+    "introTitle": "Carriere in SM Nettoyage",
+    "introBody": "Cerchiamo professionisti delle pulizie motivati e orgogliosi del proprio lavoro. Se siete affidabili, precisi e amate far brillare gli ambienti, scriveteci.",
+    "benefitsTitle": "Perché unirvi a noi",
+    "benefit1": "Team solidale",
+    "benefit2": "Orari flessibili quando possibile",
+    "benefit3": "Formazione e aspettative chiare",
+    "benefit4": "Opportunità di crescita in azienda",
+    "formTitle": "Candidati o presentati",
+    "name": "Nome completo",
+    "email": "E-mail",
+    "phone": "Telefono",
+    "role": "Ruolo di interesse",
+    "rolePlaceholder": "es. Addetto pulizie, Capo squadra",
+    "message": "Messaggio / nota CV",
+    "messagePlaceholder": "Parlateci della vostra esperienza e disponibilità…",
+    "submit": "Invia candidatura",
+    "mailSubject": "Candidatura — SM Nettoyage",
+    "errors": {
+      "name": "Inserite il vostro nome",
+      "email": "Inserite un’e-mail valida",
+      "phone": "Inserite un numero di telefono",
+      "role": "Indicate un ruolo di interesse",
+      "message": "Aggiungete un breve messaggio"
+    }
+  },
+  "contact": {
+    "title": "Contatti",
+    "subtitle": "Siamo qui per aiutarvi — chiedete un preventivo gratuito o fate una domanda.",
+    "infoTitle": "Contattaci",
+    "formTitle": "Invia un messaggio",
+    "name": "Nome completo",
+    "email": "E-mail",
+    "phone": "Telefono",
+    "message": "Messaggio",
+    "messagePlaceholder": "Come possiamo aiutarvi?",
+    "submit": "Invia messaggio",
+    "mailSubject": "Contatto — SM Nettoyage",
+    "errors": {
+      "name": "Inserite il vostro nome",
+      "email": "Inserite un’e-mail valida",
+      "phone": "Inserite un numero di telefono valido",
+      "message": "Inserite il vostro messaggio"
+    }
+  },
+  "footer": {
+    "tagline": "Consegna e cura",
+    "quickLinks": "Link rapidi",
+    "rights": "© {year} SM Nettoyage. Tutti i diritti riservati."
+  },
+  "testimonials": {
+    "items": [
+      {
+        "name": "Sophie M.",
+        "text": "Puntuali, accurati e cordiali. Il nostro appartamento non è mai stato così bello.",
+        "rating": 5
+      },
+      {
+        "name": "Luca R.",
+        "text": "La pulizia post-ristrutturazione era perfetta — niente polvere rimasta.",
+        "rating": 5
+      },
+      {
+        "name": "Anna K.",
+        "text": "Pulizia uffici affidabile ogni settimana. Professionali dall’inizio alla fine.",
+        "rating": 5
+      }
+    ]
+  }
+}
