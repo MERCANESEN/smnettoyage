@@ -3,7 +3,8 @@ import { Link } from "@/i18n/navigation";
 import { Hero } from "@/components/Hero";
 import { ServicesShowcase } from "@/components/ServicesShowcase";
 import { GoogleReviews } from "@/components/GoogleReviews";
-import { SocialIcons } from "@/components/SocialIcons";
+import { SocialIcons, hasSocialLinks } from "@/components/SocialIcons";
+import { fetchGoogleReviews } from "@/lib/google-reviews";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -13,6 +14,7 @@ export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
+  const reviews = await fetchGoogleReviews();
 
   return (
     <>
@@ -39,17 +41,19 @@ export default async function HomePage({ params }: Props) {
       </section>
 
       <div className="border-y border-brand-line/80 bg-white/50">
-        <GoogleReviews />
+        <GoogleReviews data={reviews} />
       </div>
 
-      <section className="py-14">
-        <div className="section-shell flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-          <h2 className="font-display text-2xl font-semibold text-brand-deep">
-            {t("socialTitle")}
-          </h2>
-          <SocialIcons />
-        </div>
-      </section>
+      {hasSocialLinks() ? (
+        <section className="py-14">
+          <div className="section-shell flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+            <h2 className="font-display text-2xl font-semibold text-brand-deep">
+              {t("socialTitle")}
+            </h2>
+            <SocialIcons />
+          </div>
+        </section>
+      ) : null}
     </>
   );
 }

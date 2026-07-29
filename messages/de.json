@@ -64,13 +64,7 @@
       "title": "Reinigungsdienste für jeden Raum",
       "subtitle": "Sauberere Räume mit unserem Detail-Clean-Rotationssystem",
       "body": "Bei SM Nettoyage folgen wir einem strukturierten Rotationssystem für die Tiefenreinigung aller Leistungen: Wohnungen, Büros, Fenster, Endreinigung nach Bau sowie Vor-/Nachumzug. So gewährleisten wir konsequente, gründliche Hygiene in jedem Raum — abgestimmt auf Ihre Bedürfnisse. Bei SM Nettoyage ist Sauberkeit kein Zufall, sondern Garantie.",
-      "cta": "Unser System entdecken",
-      "labels": {
-        "homes": "Wohnungen",
-        "offices": "Büros",
-        "windows": "Fenster",
-        "construction": "Nach Bau"
-      }
+      "cta": "Unsere Dienstleistungen entdecken"
     }
   },
   "services": {
@@ -109,7 +103,7 @@
     "title": "Über uns",
     "subtitle": "Ein Reinigungspartner, dem Sie vertrauen können.",
     "storyTitle": "Wer wir sind",
-    "storyBody": "SM Nettoyage basiert auf einem einfachen Versprechen: dort zu sein, wo Sie sind, wann Sie uns brauchen — und Ihren Raum zu pflegen, als wäre er unser eigener. Geschulte Fachkräfte, zuverlässige Termine und Sorgfalt im Detail — Lieferung und Sorgfalt bei jedem Einsatz.",
+    "storyBody": "SM Nettoyage basiert auf einem einfachen Versprechen: dort zu sein, wo Sie sind, wann Sie uns brauchen — und Ihren Raum zu pflegen, als wäre er unser eigener. Geschulte Fachkräfte, zuverlässige Termine und Sorgfalt im Detail — Sorgfalt bei jedem Einsatz.",
     "valuesTitle": "Wofür wir stehen",
     "value1Title": "Zuverlässigkeit",
     "value1Body": "Klare Kommunikation, pünktliche Ankunft und gleichbleibende Qualität.",
@@ -201,7 +195,7 @@
     }
   },
   "footer": {
-    "tagline": "Lieferung und Sorgfalt",
+    "tagline": "Sorgfalt bei jedem Einsatz",
     "quickLinks": "Schnelllinks",
     "rights": "© {year} SM Nettoyage. Alle Rechte vorbehalten."
   },

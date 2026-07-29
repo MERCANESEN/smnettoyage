@@ -21,6 +21,14 @@ function FacebookIcon() {
   );
 }
 
+function isLiveHref(href: string) {
+  return Boolean(href && href !== "#");
+}
+
+export function hasSocialLinks() {
+  return Object.values(SOCIAL_LINKS).some(isLiveHref);
+}
+
 export function SocialIcons({
   className = "",
   variant = "default",
@@ -33,7 +41,9 @@ export function SocialIcons({
   const links = [
     { href: SOCIAL_LINKS.instagram, label: "Instagram", icon: <InstagramIcon /> },
     { href: SOCIAL_LINKS.facebook, label: "Facebook", icon: <FacebookIcon /> },
-  ];
+  ].filter((link) => isLiveHref(link.href));
+
+  if (links.length === 0) return null;
 
   return (
     <div className={`flex items-center gap-2 ${className}`}>
@@ -41,6 +51,8 @@ export function SocialIcons({
         <a
           key={link.label}
           href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label={link.label}
           className={`inline-flex h-10 w-10 items-center justify-center rounded-full transition-colors ${tone}`}
         >

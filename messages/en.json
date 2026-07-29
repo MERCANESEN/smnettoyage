@@ -64,13 +64,7 @@
       "title": "Cleaning Services for Every Space",
       "subtitle": "Keeping Every Space Cleaner With Our Detail-Clean Rotation System",
       "body": "At SM Nettoyage, we follow a structured rotation system to deep clean every service we offer; homes, offices, windows, after-construction cleaning, and move-in/move-out cleaning. This ensures consistent, thorough sanitation across every space, tailored to your specific needs. With SM Nettoyage, cleanliness isn't occasional, it's guaranteed.",
-      "cta": "Learn About Our System",
-      "labels": {
-        "homes": "Homes",
-        "offices": "Offices",
-        "windows": "Windows",
-        "construction": "After-Construction"
-      }
+      "cta": "Learn About Our Services"
     }
   },
   "services": {
@@ -109,7 +103,7 @@
     "title": "About Us",
     "subtitle": "A cleaning partner you can trust.",
     "storyTitle": "Who we are",
-    "storyBody": "SM Nettoyage was built on a simple promise: show up wherever you are, whenever you need us, and take care of your space as if it were our own. We combine trained professionals, dependable scheduling, and careful attention to detail — Delivery and care in every visit.",
+    "storyBody": "SM Nettoyage was built on a simple promise: show up wherever you are, whenever you need us, and take care of your space as if it were our own. We combine trained professionals, dependable scheduling, and careful attention to detail — Care in every visit.",
     "valuesTitle": "What we stand for",
     "value1Title": "Reliability",
     "value1Body": "Clear communication, punctual arrivals, and consistent quality you can plan around.",
@@ -201,7 +195,7 @@
     }
   },
   "footer": {
-    "tagline": "Delivery and care",
+    "tagline": "Care in every visit",
     "quickLinks": "Quick links",
     "rights": "© {year} SM Nettoyage. All rights reserved."
   },

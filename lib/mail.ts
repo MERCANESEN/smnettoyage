@@ -8,6 +8,14 @@ function requiredEnv(name: string): string {
   return value;
 }
 
+export function isMailConfigured() {
+  return Boolean(
+    process.env.SMTP_HOST &&
+      process.env.SMTP_USER &&
+      process.env.SMTP_PASS,
+  );
+}
+
 export function getMailConfig() {
   return {
     host: requiredEnv("SMTP_HOST"),

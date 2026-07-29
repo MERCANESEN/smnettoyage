@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -16,41 +16,38 @@ export function Hero() {
     [total],
   );
 
-  useEffect(() => {
-    const id = window.setInterval(() => go(index + 1), 6000);
-    return () => window.clearInterval(id);
-  }, [go, index]);
-
   return (
     <section
-      className="relative isolate h-[min(78vh,820px)] w-full overflow-hidden"
+      className="relative isolate h-[min(70vh,760px)] w-full overflow-hidden bg-gradient-to-br from-brand-deep via-brand-sky to-brand-ink sm:h-[min(78vh,820px)]"
       aria-label={t("sliderTitle")}
     >
       <div className="absolute inset-0 overflow-hidden">
-        {HOME_SLIDES.map((src, i) => (
-          <div
-            key={src}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              i === index ? "opacity-100" : "pointer-events-none opacity-0"
-            }`}
-            aria-hidden={i !== index}
-          >
-            <Image
-              src={src}
-              alt=""
-              fill
-              priority={i === 0}
-              className="h-full w-full object-cover object-center"
-              sizes="100vw"
-            />
-          </div>
-        ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-ink/85 via-brand-ink/55 to-brand-deep/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/50 via-transparent to-brand-ink/20" />
+        {HOME_SLIDES.map((src, i) => {
+          const nearby = Math.abs(i - index) <= 1 || (index === 0 && i === total - 1) || (index === total - 1 && i === 0);
+          if (!nearby && i !== index) return null;
+          return (
+            <div
+              key={src}
+              className={`absolute inset-0 ${
+                i === index ? "opacity-100" : "pointer-events-none opacity-0"
+              }`}
+              aria-hidden={i !== index}
+            >
+              <Image
+                src={src}
+                alt=""
+                fill
+                priority={i === 0}
+                className="h-full w-full object-contain object-center"
+                sizes="100vw"
+              />
+            </div>
+          );
+        })}
       </div>
 
-      <div className="section-shell relative z-10 flex h-full flex-col justify-end gap-8 py-12 sm:justify-center sm:gap-10 sm:py-16">
-        <div className="max-w-2xl text-white">
+      <div className="section-shell relative z-10 flex h-full flex-col justify-end pb-20 pt-12 sm:justify-center sm:pb-16 sm:pt-16">
+        <div className="max-w-2xl rounded-2xl bg-brand-ink/75 p-6 text-white shadow-[0_16px_40px_rgba(0,0,0,0.25)] backdrop-blur-sm sm:p-8">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-white/85">
             SM Nettoyage
           </p>
@@ -72,8 +69,10 @@ export function Hero() {
             </Link>
           </div>
         </div>
+      </div>
 
-        <div className="flex flex-wrap items-center gap-3">
+      <div className="absolute inset-x-0 bottom-3 z-20 sm:bottom-5">
+        <div className="section-shell flex flex-wrap items-center gap-3">
           <button
             type="button"
             className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/90 text-brand-deep shadow-sm"

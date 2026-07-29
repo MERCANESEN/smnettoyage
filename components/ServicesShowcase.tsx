@@ -3,8 +3,16 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SERVICE_SHOWCASE } from "@/lib/form-helpers";
 
+const SHOWCASE_SERVICE_KEY = {
+  homes: "home",
+  offices: "office",
+  windows: "windows",
+  construction: "construction",
+} as const;
+
 export async function ServicesShowcase() {
   const t = await getTranslations("home");
+  const ts = await getTranslations("services");
 
   return (
     <section className="py-16 sm:py-20">
@@ -13,20 +21,15 @@ export async function ServicesShowcase() {
           {SERVICE_SHOWCASE.map((item) => (
             <figure
               key={item.id}
-              className="group relative aspect-square overflow-hidden rounded-2xl border border-brand-line bg-brand-mist shadow-[0_10px_28px_rgba(11,79,138,0.08)]"
+              className="relative aspect-square overflow-hidden rounded-2xl border border-brand-line bg-brand-mist shadow-[0_10px_28px_rgba(11,79,138,0.08)]"
             >
               <Image
                 src={item.src}
-                alt={t(`showcase.labels.${item.id}`)}
+                alt={ts(`${SHOWCASE_SERVICE_KEY[item.id]}.title`)}
                 fill
-                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 50vw, 28vw"
               />
-              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-ink/85 via-brand-ink/45 to-transparent px-3 pb-3 pt-10">
-                <span className="text-sm font-bold tracking-wide text-white sm:text-base">
-                  {t(`showcase.labels.${item.id}`)}
-                </span>
-              </figcaption>
             </figure>
           ))}
         </div>

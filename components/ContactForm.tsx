@@ -1,10 +1,30 @@
 "use client";
 
-import { FormEvent, useState, type ReactNode } from "react";
+import {
+  Children,
+  FormEvent,
+  cloneElement,
+  isValidElement,
+  useId,
+  useState,
+  type ReactElement,
+  type ReactNode,
+} from "react";
 import { useTranslations } from "next-intl";
 import { isValidEmail, openMailto } from "@/lib/mailto";
 
 type Errors = Partial<Record<string, string>>;
+
+function shouldFallbackToMailto(status: number, error?: string) {
+  return (
+    status === 404 ||
+    status === 405 ||
+    status === 500 ||
+    status === 502 ||
+    status === 503 ||
+    error === "mail_unconfigured"
+  );
+}
 
 export function ContactForm() {
   const t = useTranslations("contact");
@@ -35,6 +55,14 @@ export function ContactForm() {
       website: String(form.get("website") || ""),
     };
 
+    const mailtoBody = [
+      `Name: ${payload.name}`,
+      `Email: ${payload.email}`,
+      `Phone: ${payload.phone || "-"}`,
+      "",
+      payload.message,
+    ].join("\n");
+
     setSubmitting(true);
     try {
       const res = await fetch("/api/contact", {
@@ -43,26 +71,17 @@ export function ContactForm() {
         body: JSON.stringify(payload),
       });
 
-      if (res.status === 404 || res.status === 405) {
-        openMailto(
-          t("mailSubject"),
-          [
-            `Name: ${payload.name}`,
-            `Email: ${payload.email}`,
-            `Phone: ${payload.phone || "-"}`,
-            "",
-            payload.message,
-          ].join("\n"),
-        );
-        formEl.reset();
-        setSuccess(true);
-        return;
-      }
-
       const data = (await res.json().catch(() => ({}))) as {
         error?: string;
         errors?: Errors;
       };
+
+      if (shouldFallbackToMailto(res.status, data.error)) {
+        openMailto(t("mailSubject"), mailtoBody);
+        formEl.reset();
+        setSuccess(true);
+        return;
+      }
 
       if (!res.ok) {
         if (data.errors) setErrors(data.errors);
@@ -73,16 +92,7 @@ export function ContactForm() {
       formEl.reset();
       setSuccess(true);
     } catch {
-      openMailto(
-        t("mailSubject"),
-        [
-          `Name: ${payload.name}`,
-          `Email: ${payload.email}`,
-          `Phone: ${payload.phone || "-"}`,
-          "",
-          payload.message,
-        ].join("\n"),
-      );
+      openMailto(t("mailSubject"), mailtoBody);
       formEl.reset();
       setSuccess(true);
     } finally {
@@ -158,11 +168,33 @@ function Field({
   error?: string;
   children: ReactNode;
 }) {
+  const id = useId();
+  const errorId = `${id}-error`;
+  const child = Children.only(children);
+
+  if (!isValidElement(child)) {
+    return (
+      <div className="form-field">
+        <label>{label}</label>
+        {children}
+        {error ? <span className="form-error">{error}</span> : null}
+      </div>
+    );
+  }
+
   return (
     <div className="form-field">
-      <label>{label}</label>
-      {children}
-      {error ? <span className="form-error">{error}</span> : null}
+      <label htmlFor={id}>{label}</label>
+      {cloneElement(child as ReactElement<Record<string, unknown>>, {
+        id,
+        "aria-invalid": error ? true : undefined,
+        "aria-describedby": error ? errorId : undefined,
+      })}
+      {error ? (
+        <span id={errorId} className="form-error">
+          {error}
+        </span>
+      ) : null}
     </div>
   );
 }

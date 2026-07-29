@@ -64,13 +64,7 @@
       "title": "Des services de nettoyage pour chaque espace",
       "subtitle": "Des espaces plus propres grâce à notre système de rotation Detail-Clean",
       "body": "Chez SM Nettoyage, nous suivons un système de rotation structuré pour un nettoyage en profondeur de tous nos services : maisons, bureaux, vitres, après travaux et avant/après déménagement. Cela garantit une hygiène constante et soignée dans chaque espace, adaptée à vos besoins. Avec SM Nettoyage, la propreté n’est pas occasionnelle — elle est garantie.",
-      "cta": "Découvrir notre système",
-      "labels": {
-        "homes": "Maisons",
-        "offices": "Bureaux",
-        "windows": "Vitres",
-        "construction": "Après travaux"
-      }
+      "cta": "Découvrir nos services"
     }
   },
   "services": {
@@ -109,7 +103,7 @@
     "title": "À propos",
     "subtitle": "Un partenaire de nettoyage de confiance.",
     "storyTitle": "Qui sommes-nous",
-    "storyBody": "SM Nettoyage repose sur une promesse simple : être là où vous êtes, quand vous en avez besoin, et prendre soin de votre espace comme du nôtre. Professionnels formés, planning fiable et souci du détail — Livraison et soin à chaque visite.",
+    "storyBody": "SM Nettoyage repose sur une promesse simple : être là où vous êtes, quand vous en avez besoin, et prendre soin de votre espace comme du nôtre. Professionnels formés, planning fiable et souci du détail — Soin à chaque visite.",
     "valuesTitle": "Nos valeurs",
     "value1Title": "Fiabilité",
     "value1Body": "Communication claire, ponctualité et qualité constante sur lesquelles vous pouvez compter.",
@@ -133,7 +127,7 @@
     "plz": "NPA",
     "town": "Localité",
     "addressExtra": "Adresse complémentaire",
-    "addressExtraPlaceholder": "optional",
+    "addressExtraPlaceholder": "facultatif",
     "date": "Date souhaitée",
     "time": "Heure souhaitée",
     "timePlaceholder": "Choisir une heure",
@@ -201,7 +195,7 @@
     }
   },
   "footer": {
-    "tagline": "Livraison et soin",
+    "tagline": "Soin à chaque visite",
     "quickLinks": "Liens rapides",
     "rights": "© {year} SM Nettoyage. Tous droits réservés."
   },

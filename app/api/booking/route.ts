@@ -4,7 +4,7 @@ import {
   getBookingTimeSlots,
   isValidSwissPlz,
 } from "@/lib/form-helpers";
-import { isValidEmail, sendBusinessEmail } from "@/lib/mail";
+import { isMailConfigured, isValidEmail, sendBusinessEmail } from "@/lib/mail";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 
 type BookingBody = {
@@ -75,6 +75,13 @@ export async function POST(request: Request) {
 
     if (Object.keys(errors).length) {
       return NextResponse.json({ error: "Validation failed", errors }, { status: 400 });
+    }
+
+    if (!isMailConfigured()) {
+      return NextResponse.json(
+        { error: "mail_unconfigured" },
+        { status: 503 },
+      );
     }
 
     const text = [

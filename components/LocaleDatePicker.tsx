@@ -17,6 +17,9 @@ const DATE_LOCALES: Record<string, DateLocale> = {
 type LocaleDatePickerProps = {
   name?: string;
   error?: boolean;
+  id?: string;
+  "aria-invalid"?: boolean;
+  "aria-describedby"?: string;
 };
 
 function toIsoDate(date: Date) {
@@ -26,7 +29,13 @@ function toIsoDate(date: Date) {
   return `${y}-${m}-${d}`;
 }
 
-export function LocaleDatePicker({ name = "date", error }: LocaleDatePickerProps) {
+export function LocaleDatePicker({
+  name = "date",
+  error,
+  id,
+  "aria-invalid": ariaInvalid,
+  "aria-describedby": ariaDescribedBy,
+}: LocaleDatePickerProps) {
   const siteLocale = useLocale();
   const dateLocale = DATE_LOCALES[siteLocale] || fr;
   const [selected, setSelected] = useState<Date | undefined>();
@@ -53,11 +62,14 @@ export function LocaleDatePicker({ name = "date", error }: LocaleDatePickerProps
       <input type="hidden" name={name} value={selected ? toIsoDate(selected) : ""} />
       <button
         type="button"
+        id={id}
         className={`flex min-h-11 w-full items-center justify-between rounded-[0.5rem] border bg-white px-3 text-left text-sm ${
           error ? "border-red-400" : "border-brand-line"
         } ${selected ? "text-brand-ink" : "text-brand-muted"}`}
         aria-haspopup="dialog"
         aria-expanded={open}
+        aria-invalid={ariaInvalid}
+        aria-describedby={ariaDescribedBy}
         onClick={() => setOpen((value) => !value)}
       >
         <span>{display || "—"}</span>

@@ -1,59 +1,15 @@
-"use client";
+import { getTranslations } from "next-intl/server";
+import type { GoogleReviewsPayload } from "@/lib/google-reviews";
+import { defaultMapsUri } from "@/lib/google-reviews";
 
-import { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
-
-type Review = {
-  authorName: string;
-  rating: number;
-  text: string;
-  relativeTime: string;
+type GoogleReviewsProps = {
+  data: GoogleReviewsPayload;
 };
 
-type ReviewsPayload = {
-  configured?: boolean;
-  name?: string;
-  rating?: number | null;
-  total?: number;
-  mapsUri?: string | null;
-  reviews?: Review[];
-  error?: string;
-};
-
-export function GoogleReviews() {
-  const t = useTranslations("home");
-  const [data, setData] = useState<ReviewsPayload | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      try {
-        const res = await fetch("/api/reviews");
-        const json = (await res.json()) as ReviewsPayload;
-        if (!cancelled) setData(json);
-      } catch {
-        if (!cancelled) {
-          setData({
-            configured: false,
-            reviews: [],
-            error: "unavailable",
-          });
-        }
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  const reviews = data?.reviews || [];
-  const mapsUri =
-    data?.mapsUri ||
-    process.env.NEXT_PUBLIC_GOOGLE_MAPS_URL ||
-    "https://www.google.com/maps/search/?api=1&query=SM+Nettoyage+La+Tour-de-Tr%C3%AAme";
+export async function GoogleReviews({ data }: GoogleReviewsProps) {
+  const t = await getTranslations("home");
+  const reviews = data.reviews || [];
+  const mapsUri = data.mapsUri || defaultMapsUri();
 
   return (
     <section className="py-16 sm:py-20">
@@ -64,7 +20,7 @@ export function GoogleReviews() {
               {t("reviewsTitle")}
             </h2>
             <p className="mt-3 text-brand-muted">{t("reviewsSubtitle")}</p>
-            {data?.rating ? (
+            {data.rating ? (
               <p className="mt-3 flex items-center gap-2 text-sm font-semibold text-brand-ink">
                 <span className="text-[#FBBC05]" aria-hidden>
                   ★
@@ -89,9 +45,7 @@ export function GoogleReviews() {
           </a>
         </div>
 
-        {loading ? (
-          <p className="text-sm text-brand-muted">{t("reviewsLoading")}</p>
-        ) : reviews.length > 0 ? (
+        {reviews.length > 0 ? (
           <div className="grid gap-5 md:grid-cols-3">
             {reviews.slice(0, 6).map((item) => (
               <blockquote

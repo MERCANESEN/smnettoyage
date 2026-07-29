@@ -1,6 +1,16 @@
 "use client";
 
-import { FormEvent, useMemo, useState, type ReactNode } from "react";
+import {
+  Children,
+  FormEvent,
+  cloneElement,
+  isValidElement,
+  useId,
+  useMemo,
+  useState,
+  type ReactElement,
+  type ReactNode,
+} from "react";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { SERVICE_IDS, type ServiceId } from "@/lib/constants";
@@ -9,6 +19,17 @@ import { isValidEmail, openMailto } from "@/lib/mailto";
 import { LocaleDatePicker } from "@/components/LocaleDatePicker";
 
 type Errors = Partial<Record<string, string>>;
+
+function shouldFallbackToMailto(status: number, error?: string) {
+  return (
+    status === 404 ||
+    status === 405 ||
+    status === 500 ||
+    status === 502 ||
+    status === 503 ||
+    error === "mail_unconfigured"
+  );
+}
 
 export function BookingForm() {
   const t = useTranslations("booking");
@@ -102,17 +123,17 @@ export function BookingForm() {
         body: JSON.stringify(payload),
       });
 
-      if (res.status === 404 || res.status === 405) {
+      const data = (await res.json().catch(() => ({}))) as {
+        error?: string;
+        errors?: Errors;
+      };
+
+      if (shouldFallbackToMailto(res.status, data.error)) {
         openMailto(t("mailSubject"), mailtoBody);
         formEl.reset();
         setSuccess(true);
         return;
       }
-
-      const data = (await res.json().catch(() => ({}))) as {
-        error?: string;
-        errors?: Errors;
-      };
 
       if (!res.ok) {
         if (data.errors) setErrors(data.errors);
@@ -257,11 +278,33 @@ function Field({
   error?: string;
   children: ReactNode;
 }) {
+  const id = useId();
+  const errorId = `${id}-error`;
+  const child = Children.only(children);
+
+  if (!isValidElement(child)) {
+    return (
+      <div className="form-field">
+        <label>{label}</label>
+        {children}
+        {error ? <span className="form-error">{error}</span> : null}
+      </div>
+    );
+  }
+
   return (
     <div className="form-field">
-      <label>{label}</label>
-      {children}
-      {error ? <span className="form-error">{error}</span> : null}
+      <label htmlFor={id}>{label}</label>
+      {cloneElement(child as ReactElement<Record<string, unknown>>, {
+        id,
+        "aria-invalid": error ? true : undefined,
+        "aria-describedby": error ? errorId : undefined,
+      })}
+      {error ? (
+        <span id={errorId} className="form-error">
+          {error}
+        </span>
+      ) : null}
     </div>
   );
 }
