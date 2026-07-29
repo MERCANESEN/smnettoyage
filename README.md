@@ -37,8 +37,4 @@ npm start
 
 Set the SMTP environment variables in the Hostinger panel.
 
-## Contact details
 
-- Address: Rue des Agas, 1635 La Tour-de-Trême, Switzerland  
-- Phone: +41 78 230 79 54  
-- Email: info@smnettoyage.ch
