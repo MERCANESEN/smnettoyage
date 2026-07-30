@@ -85,7 +85,7 @@ export async function POST(request: Request) {
     }
 
     const text = [
-      "New booking request — SM Nettoyage",
+      "New booking request : SM Nettoyage",
       "",
       `Name: ${name}`,
       `Email: ${email}`,
@@ -96,11 +96,11 @@ export async function POST(request: Request) {
       `Additional address: ${addressExtra || "-"}`,
       `Preferred date: ${date}`,
       `Preferred time: ${time}`,
-      `Notes: ${notes || "-"}`,
+      `Notes: ${notes}`,
     ].join("\n");
 
     await sendBusinessEmail({
-      subject: `Booking — ${name} (${service})`,
+      subject: `Booking : ${name} (${service})`,
       text,
       replyTo: email,
     });

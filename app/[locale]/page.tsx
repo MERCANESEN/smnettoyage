@@ -6,6 +6,7 @@ import { ProcessSteps } from "@/components/ProcessSteps";
 import { CoverageBand } from "@/components/CoverageBand";
 import { GoogleReviews } from "@/components/GoogleReviews";
 import { SocialIcons, hasSocialLinks } from "@/components/SocialIcons";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { fetchGoogleReviews } from "@/lib/google-reviews";
 
 type Props = {
@@ -16,6 +17,7 @@ export default async function HomePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
+  const tc = await getTranslations("contact");
   const reviews = await fetchGoogleReviews();
 
   return (
@@ -50,16 +52,21 @@ export default async function HomePage({ params }: Props) {
         <GoogleReviews data={reviews} />
       </div>
 
-      {hasSocialLinks() ? (
-        <section className="py-14">
-          <div className="section-shell flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-            <h2 className="font-display text-2xl font-semibold text-brand-deep">
-              {t("socialTitle")}
-            </h2>
-            <SocialIcons />
+      <section className="py-14 sm:py-16">
+        <div className="section-shell flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-center">
+          <h2 className="font-display text-2xl font-semibold text-brand-deep">
+            {t("socialTitle")}
+          </h2>
+          <div className="flex flex-wrap items-center gap-3">
+            {hasSocialLinks() ? <SocialIcons /> : null}
+            <WhatsAppButton
+              label={tc("whatsappCta")}
+              prefill={tc("whatsappPrefill")}
+              className="min-h-11 w-full sm:w-auto"
+            />
           </div>
-        </section>
-      ) : null}
+        </div>
+      </section>
     </>
   );
 }

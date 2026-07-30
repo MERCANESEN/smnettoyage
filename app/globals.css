@@ -127,6 +127,30 @@ body {
   transform: translateY(-2px);
 }
 
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border-radius: 0.5rem;
+  background: #25d366;
+  color: white;
+  padding: 0.85rem 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.28);
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe57;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(37, 211, 102, 0.35);
+}
+
 .section-shell {
   margin-inline: auto;
   width: min(1120px, calc(100% - 1.5rem));
@@ -139,13 +163,15 @@ body {
 }
 
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-whatsapp {
   min-height: 2.75rem;
 }
 
 @media (max-width: 639px) {
   .btn-primary,
-  .btn-secondary {
+  .btn-secondary,
+  .btn-whatsapp {
     padding: 0.7rem 1.15rem;
     font-size: 0.95rem;
   }

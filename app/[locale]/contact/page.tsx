@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SocialIcons } from "@/components/SocialIcons";
+import { WhatsAppButton, WhatsAppIcon } from "@/components/WhatsAppButton";
 import {
   COMPANY_ADDRESS_FULL,
   COMPANY_EMAIL,
@@ -8,7 +9,6 @@ import {
   COMPANY_PHONE_TEL,
   COMPANY_WHATSAPP_URL,
 } from "@/lib/constants";
-import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -19,7 +19,6 @@ export default async function ContactPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("contact");
   const tc = await getTranslations("common");
-  const whatsappHref = buildWhatsAppUrl(t("whatsappPrefill"));
 
   return (
     <div className="pb-20">
@@ -64,8 +63,9 @@ export default async function ContactPage({ params }: Props) {
                   href={COMPANY_WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-brand-sky hover:underline"
+                  className="inline-flex items-center gap-2 text-[#25d366] hover:underline"
                 >
+                  <WhatsAppIcon className="h-4 w-4" />
                   {COMPANY_PHONE}
                 </a>
               </p>
@@ -100,17 +100,14 @@ export default async function ContactPage({ params }: Props) {
               {t("channelsTitle")}
             </h2>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <a
-                href={whatsappHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary inline-flex min-h-11 w-full items-center justify-center sm:w-auto"
-              >
-                {t("whatsappCta")}
-              </a>
+              <WhatsAppButton
+                label={t("whatsappCta")}
+                prefill={t("whatsappPrefill")}
+                className="min-h-11 w-full sm:w-auto"
+              />
               <a
                 href={`mailto:${COMPANY_EMAIL}`}
-                className="btn-secondary inline-flex min-h-11 w-full items-center justify-center sm:w-auto"
+                className="btn-primary inline-flex min-h-11 w-full items-center justify-center sm:w-auto"
               >
                 {t("emailCta")}
               </a>

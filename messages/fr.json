@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "SM Nettoyage — Services de nettoyage professionnels",
-    "description": "Où que vous soyez, nous serons là — nettoyage professionnel pour maisons, bureaux, vitres, après travaux et déménagements."
+    "title": "SM Nettoyage : Services de nettoyage professionnels",
+    "description": "Où que vous soyez, nous serons là, nettoyage professionnel pour maisons, bureaux, vitres, après travaux et déménagements."
   },
   "nav": {
     "home": "Accueil",
@@ -40,7 +40,7 @@
     "stay": "Rester en français"
   },
   "home": {
-    "heroTagline": "La propreté, notre priorité — chaque espace, à chaque fois",
+    "heroTagline": "La propreté, notre priorité, chaque espace, à chaque fois",
     "heroLead": "Nous mettons à votre service toute notre équipe de professionnels et un équipement de pointe.",
     "heroDifference": "SM Nettoyage fait la différence.",
     "introTitle": "Un nettoyage réalisé avec soin",
@@ -52,8 +52,8 @@
     "reviewsSubtitle": "Retours authentiques de clients sur Google.",
     "reviewsNote": "",
     "reviewsLoading": "Chargement des avis Google…",
-    "reviewsPride": "Nous sommes fiers des retours de nos clients — découvrez nos derniers avis sur Google !",
-    "reviewsUnavailable": "Nous sommes fiers des retours de nos clients — découvrez nos derniers avis sur Google !",
+    "reviewsPride": "Nous sommes fiers des retours de nos clients, découvrez nos derniers avis sur Google !",
+    "reviewsUnavailable": "Nous sommes fiers des retours de nos clients, découvrez nos derniers avis sur Google !",
     "reviewsOnGoogle": "Voir les avis sur Google",
     "reviewsCount": "{count} avis",
     "socialTitle": "Restez connectés",
@@ -64,12 +64,12 @@
     "showcase": {
       "title": "Des services de nettoyage pour chaque espace",
       "subtitle": "Des espaces plus propres grâce à notre système de rotation Detail-Clean",
-      "body": "Chez SM Nettoyage, nous suivons un système de rotation structuré pour un nettoyage en profondeur de tous nos services : maisons, bureaux, vitres, après travaux et avant/après déménagement. Cela garantit une hygiène constante et soignée dans chaque espace, adaptée à vos besoins. Avec SM Nettoyage, la propreté n’est pas occasionnelle — elle est garantie.",
+      "body": "Chez SM Nettoyage, nous suivons un système de rotation structuré pour un nettoyage en profondeur de tous nos services : maisons, bureaux, vitres, après travaux et avant/après déménagement. Cela garantit une hygiène constante et soignée dans chaque espace, adaptée à vos besoins. Avec SM Nettoyage, la propreté n’est pas occasionnelle, elle est garantie.",
       "cta": "Découvrir nos services"
     },
     "process": {
       "title": "Comment ça se passe",
-      "subtitle": "Un parcours simple, clair et professionnel — de la demande à l’intervention.",
+      "subtitle": "Un parcours simple, clair et professionnel, de la demande à l’intervention.",
       "steps": {
         "1": {
           "title": "Demande",
@@ -93,7 +93,7 @@
   "services": {
     "home": {
       "title": "Nettoyage de maison",
-      "short": "Un nettoyage soigné pour appartements et maisons — cuisine, salles de bain, pièces de vie et plus.",
+      "short": "Un nettoyage soigné pour appartements et maisons, cuisine, salles de bain, pièces de vie et plus.",
       "long": "Nettoyage régulier ou ponctuel à domicile : dépoussiérage, sols, cuisine, salles de bain et surfaces fréquemment touchées. Nous nous adaptons à vos préférences pour un intérieur toujours frais."
     },
     "office": {
@@ -109,33 +109,35 @@
     "construction": {
       "title": "Nettoyage après travaux",
       "short": "Un grand nettoyage post-rénovation pour enlever poussière, débris et résidus.",
-      "long": "Nettoyage détaillé après construction ou rénovation — poussière fine, résidus, sols et équipements — pour profiter de l’espace fini sans le chantier."
+      "long": "Nettoyage détaillé après construction ou rénovation, poussière fine, résidus, sols et équipements, pour profiter de l’espace fini sans le chantier."
     },
     "moving": {
       "title": "Nettoyage avant / après déménagement",
-      "short": "Nettoyage de maison avant l’emménagement ou après le départ — un départ et une arrivée propres.",
+      "short": "Nettoyage de maison avant l’emménagement ou après le départ, un départ et une arrivée propres.",
       "long": "Grand nettoyage des maisons avant remise des clés ou après arrivée. Espaces vides, placards, sols et salles de bain pour un échange de clés en toute confiance."
     }
   },
   "servicesPage": {
     "title": "Nos services",
-    "subtitle": "Choisissez le nettoyage adapté à vos besoins — puis réservez en quelques clics.",
+    "subtitle": "Choisissez le nettoyage adapté à vos besoins, puis réservez en quelques clics.",
     "bookCta": "Réserver"
   },
   "about": {
     "title": "À propos",
-    "subtitle": "Un partenaire de nettoyage de confiance — propreté, fiabilité et soin à chaque visite.",
+    "subtitle": "Un partenaire de nettoyage de confiance, propreté, fiabilité et soin à chaque visite.",
     "storyTitle": "Qui sommes-nous",
     "storyBody": "Chez SM Nettoyage, notre équipe expérimentée et professionnelle propose des services de nettoyage de haut niveau pour les maisons, les bureaux et les espaces commerciaux. Notre équipe compte des collaborateurs spécialisés titulaires du CFC, et tous nos travaux sont réalisés avec des équipements modernes et des méthodes de nettoyage professionnelles. Grâce à notre approche fiable, soignée et centrée sur le client, nous transformons vos espaces de vie et de travail en environnements hygiéniques, sains et agréables. Pendant que vous vous concentrez sur votre quotidien, confiez-nous le nettoyage en toute sérénité.",
+    "missionTitle": "Notre mission",
+    "missionBody": "Offrir à chaque client un nettoyage professionnel, fiable et soigné, qui apporte confort, hygiène et sérénité au quotidien. Nous mettons notre expertise, notre équipe formée et un équipement de qualité au service de maisons, bureaux et espaces commerciaux, pour des résultats durables et une relation de confiance.",
     "valuesTitle": "Nos valeurs",
     "value1Title": "Fiabilité",
     "value1Body": "Communication claire, ponctualité et qualité constante sur lesquelles vous pouvez compter.",
     "value2Title": "Soin",
-    "value2Body": "Respect de votre maison, de votre lieu de travail et de vos biens — chaque surface, à chaque fois.",
+    "value2Body": "Respect de votre maison, de votre lieu de travail et de vos biens, chaque surface, à chaque fois.",
     "value3Title": "Flexibilité",
     "value3Body": "Du nettoyage ponctuel aux passages réguliers, nous nous adaptons à votre vie et à votre activité.",
     "ctaTitle": "Prêt pour un espace plus propre ?",
-    "ctaBody": "Dites-nous ce dont vous avez besoin — nous préparons un devis gratuit."
+    "ctaBody": "Dites-nous ce dont vous avez besoin, nous préparons un devis gratuit."
   },
   "booking": {
     "title": "Réserver un nettoyage",
@@ -162,7 +164,7 @@
     "submit": "Demander une réservation",
     "submitEmail": "Envoyer par e-mail",
     "submitWhatsApp": "Envoyer via WhatsApp",
-    "mailSubject": "Demande de réservation — SM Nettoyage",
+    "mailSubject": "Demande de réservation : SM Nettoyage",
     "errors": {
       "name": "Veuillez indiquer votre nom",
       "email": "Veuillez indiquer un e-mail valide",
@@ -194,7 +196,7 @@
     "message": "Message / note CV",
     "messagePlaceholder": "Parlez-nous de votre expérience et de vos disponibilités…",
     "submit": "Envoyer la candidature",
-    "mailSubject": "Candidature — SM Nettoyage",
+    "mailSubject": "Candidature : SM Nettoyage",
     "errors": {
       "name": "Veuillez indiquer votre nom",
       "email": "Veuillez indiquer un e-mail valide",
@@ -205,7 +207,7 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Nous sommes là pour vous — demandez un devis gratuit ou posez une question.",
+    "subtitle": "Nous sommes là pour vous, demandez un devis gratuit ou posez une question.",
     "infoTitle": "Nous contacter",
     "channelsTitle": "Écrire ou réserver",
     "whatsappLabel": "WhatsApp",
@@ -228,7 +230,7 @@
       },
       {
         "name": "Luca R.",
-        "text": "Le nettoyage après travaux était parfait — plus aucune poussière.",
+        "text": "Le nettoyage après travaux était parfait, plus aucune poussière.",
         "rating": 5
       },
       {

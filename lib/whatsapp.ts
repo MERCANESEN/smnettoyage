@@ -28,7 +28,7 @@ export function formatBookingWhatsAppMessage(
   serviceLabel: string,
 ) {
   return [
-    "Réservation — SM Nettoyage",
+    "Réservation : SM Nettoyage",
     "",
     `Nom: ${payload.name}`,
     `E-mail: ${payload.email}`,
@@ -39,6 +39,6 @@ export function formatBookingWhatsAppMessage(
     `Adresse complémentaire: ${payload.addressExtra || "-"}`,
     `Date souhaitée: ${payload.date}`,
     `Heure souhaitée: ${payload.time}`,
-    `Notes: ${payload.notes || "-"}`,
+    `Notes: ${payload.notes}`,
   ].join("\n");
 }

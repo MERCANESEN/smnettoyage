@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "SM Nettoyage — Servizi di pulizia professionali",
-    "description": "Ovunque siate, ci saremo — pulizie professionali per case, uffici, vetri, post-cantiere e traslochi."
+    "title": "SM Nettoyage : Servizi di pulizia professionali",
+    "description": "Ovunque siate, ci saremo, pulizie professionali per case, uffici, vetri, post-cantiere e traslochi."
   },
   "nav": {
     "home": "Home",
@@ -40,7 +40,7 @@
     "stay": "Resta in francese"
   },
   "home": {
-    "heroTagline": "La pulizia è la nostra priorità — ogni spazio, ogni volta",
+    "heroTagline": "La pulizia è la nostra priorità, ogni spazio, ogni volta",
     "heroLead": "Mettiamo al vostro servizio tutta la nostra squadra di professionisti e attrezzature all’avanguardia.",
     "heroDifference": "SM Nettoyage fa la differenza.",
     "introTitle": "Pulizia fatta con cura",
@@ -52,8 +52,8 @@
     "reviewsSubtitle": "Feedback autentici dei clienti su Google.",
     "reviewsNote": "",
     "reviewsLoading": "Caricamento delle recensioni Google…",
-    "reviewsPride": "Siamo orgogliosi del feedback dei nostri clienti — scopri le nostre ultime recensioni su Google!",
-    "reviewsUnavailable": "Siamo orgogliosi del feedback dei nostri clienti — scopri le nostre ultime recensioni su Google!",
+    "reviewsPride": "Siamo orgogliosi del feedback dei nostri clienti, scopri le nostre ultime recensioni su Google!",
+    "reviewsUnavailable": "Siamo orgogliosi del feedback dei nostri clienti, scopri le nostre ultime recensioni su Google!",
     "reviewsOnGoogle": "Vedi le recensioni su Google",
     "reviewsCount": "{count} recensioni",
     "socialTitle": "Restiamo in contatto",
@@ -69,7 +69,7 @@
     },
     "process": {
       "title": "Come funziona",
-      "subtitle": "Un percorso semplice e professionale — dalla richiesta all’intervento.",
+      "subtitle": "Un percorso semplice e professionale, dalla richiesta all’intervento.",
       "steps": {
         "1": {
           "title": "Richiesta",
@@ -93,7 +93,7 @@
   "services": {
     "home": {
       "title": "Pulizia domestica",
-      "short": "Pulizia accurata per appartamenti e case — cucina, bagni, soggiorni e altro.",
+      "short": "Pulizia accurata per appartamenti e case, cucina, bagni, soggiorni e altro.",
       "long": "Pulizia domestica regolare o occasionale: spolveratura, pavimenti, cucina, bagni e superfici di contatto. Ci adattiamo alle vostre preferenze."
     },
     "office": {
@@ -109,33 +109,35 @@
     "construction": {
       "title": "Pulizia post-cantiere",
       "short": "Pulizia dopo ristrutturazione per rimuovere polvere, detriti e residui.",
-      "long": "Pulizia dettagliata dopo lavori edili o ristrutturazioni — polvere fine, residui, pavimenti e finiture — per godersi lo spazio finito senza il cantiere."
+      "long": "Pulizia dettagliata dopo lavori edili o ristrutturazioni, polvere fine, residui, pavimenti e finiture, per godersi lo spazio finito senza il cantiere."
     },
     "moving": {
       "title": "Pulizia pre / post trasloco",
-      "short": "Pulizia della casa prima dell’ingresso o dopo la partenza — un inizio pulito a ogni indirizzo.",
+      "short": "Pulizia della casa prima dell’ingresso o dopo la partenza, un inizio pulito a ogni indirizzo.",
       "long": "Pulizia approfondita delle case prima della consegna delle chiavi o dopo l’arrivo. Ambienti vuoti, armadi, pavimenti e bagni per uno scambio chiavi sereno."
     }
   },
   "servicesPage": {
     "title": "I nostri servizi",
-    "subtitle": "Scegliete la pulizia adatta alle vostre esigenze — poi prenotate in pochi clic.",
+    "subtitle": "Scegliete la pulizia adatta alle vostre esigenze, poi prenotate in pochi clic.",
     "bookCta": "Prenota ora"
   },
   "about": {
     "title": "Chi siamo",
-    "subtitle": "Un partner di pulizia di cui potete fidarvi — pulizia, affidabilità e cura in ogni intervento.",
+    "subtitle": "Un partner di pulizia di cui potete fidarvi, pulizia, affidabilità e cura in ogni intervento.",
     "storyTitle": "Chi siamo",
     "storyBody": "In SM Nettoyage, il nostro team esperto e professionale offre servizi di pulizia di alto livello per case, uffici e spazi commerciali. Nel team lavorano specialisti con attestato CFC e tutti i nostri interventi sono eseguiti con attrezzature moderne e metodi di pulizia professionali. Grazie al nostro approccio affidabile, accurato e orientato al cliente, trasformiamo i vostri ambienti di vita e di lavoro in spazi igienici, sani e piacevoli. Mentre vi dedicate alla vita quotidiana, potete affidare la pulizia a noi in tutta tranquillità.",
+    "missionTitle": "La nostra missione",
+    "missionBody": "Offrire a ogni cliente una pulizia professionale, affidabile e accurata, che porti comfort, igiene e serenità nella vita quotidiana. Mettiamo la nostra esperienza, il nostro team formato e attrezzature di qualità al servizio di case, uffici e spazi commerciali, per risultati duraturi e un rapporto basato sulla fiducia.",
     "valuesTitle": "I nostri valori",
     "value1Title": "Affidabilità",
     "value1Body": "Comunicazione chiara, puntualità e qualità costante su cui potete contare.",
     "value2Title": "Cura",
-    "value2Body": "Rispetto per la vostra casa, il luogo di lavoro e i vostri beni — ogni superficie, ogni volta.",
+    "value2Body": "Rispetto per la vostra casa, il luogo di lavoro e i vostri beni, ogni superficie, ogni volta.",
     "value3Title": "Flessibilità",
     "value3Body": "Dalle pulizie una tantum agli interventi ricorrenti, ci adattiamo alla vostra vita e alla vostra attività.",
     "ctaTitle": "Pronti per uno spazio più pulito?",
-    "ctaBody": "Diteci di cosa avete bisogno — prepariamo un preventivo gratuito."
+    "ctaBody": "Diteci di cosa avete bisogno, prepariamo un preventivo gratuito."
   },
   "booking": {
     "title": "Prenota una pulizia",
@@ -162,7 +164,7 @@
     "submit": "Richiedi prenotazione",
     "submitEmail": "Invia per e-mail",
     "submitWhatsApp": "Invia via WhatsApp",
-    "mailSubject": "Richiesta di prenotazione — SM Nettoyage",
+    "mailSubject": "Richiesta di prenotazione : SM Nettoyage",
     "errors": {
       "name": "Inserite il vostro nome",
       "email": "Inserite un’e-mail valida",
@@ -194,7 +196,7 @@
     "message": "Messaggio / nota CV",
     "messagePlaceholder": "Parlateci della vostra esperienza e disponibilità…",
     "submit": "Invia candidatura",
-    "mailSubject": "Candidatura — SM Nettoyage",
+    "mailSubject": "Candidatura : SM Nettoyage",
     "errors": {
       "name": "Inserite il vostro nome",
       "email": "Inserite un’e-mail valida",
@@ -205,7 +207,7 @@
   },
   "contact": {
     "title": "Contatti",
-    "subtitle": "Siamo qui per aiutarvi — chiedete un preventivo gratuito o fate una domanda.",
+    "subtitle": "Siamo qui per aiutarvi, chiedete un preventivo gratuito o fate una domanda.",
     "infoTitle": "Contattaci",
     "channelsTitle": "Scrivere o prenotare",
     "whatsappLabel": "WhatsApp",
@@ -228,7 +230,7 @@
       },
       {
         "name": "Luca R.",
-        "text": "La pulizia post-ristrutturazione era perfetta — niente polvere rimasta.",
+        "text": "La pulizia post-ristrutturazione era perfetta, niente polvere rimasta.",
         "rating": 5
       },
       {

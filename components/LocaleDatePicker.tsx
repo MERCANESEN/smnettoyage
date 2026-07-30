@@ -72,7 +72,7 @@ export function LocaleDatePicker({
         aria-describedby={ariaDescribedBy}
         onClick={() => setOpen((value) => !value)}
       >
-        <span>{display || "—"}</span>
+        <span>{display || ""}</span>
         <svg viewBox="0 0 20 20" className="h-4 w-4 text-brand-sky" fill="none" aria-hidden>
           <rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor" strokeWidth="1.5" />
           <path d="M3 8h14M7 2v4M13 2v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />

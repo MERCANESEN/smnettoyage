@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "SM Nettoyage — Professionelle Reinigungsdienste",
-    "description": "Wo immer Sie sind, wir sind da — professionelle Reinigung für Zuhause, Büro, Fenster, nach Bauarbeiten und Umzügen."
+    "title": "SM Nettoyage : Professionelle Reinigungsdienste",
+    "description": "Wo immer Sie sind, wir sind da, professionelle Reinigung für Zuhause, Büro, Fenster, nach Bauarbeiten und Umzügen."
   },
   "nav": {
     "home": "Startseite",
@@ -40,11 +40,11 @@
     "stay": "Bei Französisch bleiben"
   },
   "home": {
-    "heroTagline": "Sauberkeit ist unsere Priorität — jeder Raum, jedes Mal",
+    "heroTagline": "Sauberkeit ist unsere Priorität, jeder Raum, jedes Mal",
     "heroLead": "Wir stellen Ihnen unser gesamtes Team aus Fachkräften und modernste Ausrüstung zur Verfügung.",
     "heroDifference": "SM Nettoyage macht den Unterschied.",
     "introTitle": "Reinigung mit Sorgfalt",
-    "introBody": "SM Nettoyage bietet zuverlässige, professionelle Reinigung für Wohnungen und Arbeitsplätze. Von der regelmäßigen Pflege bis zur Tiefenreinigung nach Bau oder Umzug — unser geschultes Team kommt pünktlich und hinterlässt frische, makellose Räume.",
+    "introBody": "SM Nettoyage bietet zuverlässige, professionelle Reinigung für Wohnungen und Arbeitsplätze. Von der regelmäßigen Pflege bis zur Tiefenreinigung nach Bau oder Umzug, unser geschultes Team kommt pünktlich und hinterlässt frische, makellose Räume.",
     "ctaQuote": "Kostenloses Angebot erhalten",
     "servicesTitle": "Unsere Leistungen",
     "servicesSubtitle": "Flexible Reinigungslösungen, abgestimmt auf Ihren Raum und Ihren Zeitplan.",
@@ -52,8 +52,8 @@
     "reviewsSubtitle": "Echte Kundenstimmen von Google.",
     "reviewsNote": "",
     "reviewsLoading": "Google-Bewertungen werden geladen…",
-    "reviewsPride": "Wir sind stolz auf das Feedback unserer Kunden — sehen Sie unsere aktuellen Bewertungen auf Google!",
-    "reviewsUnavailable": "Wir sind stolz auf das Feedback unserer Kunden — sehen Sie unsere aktuellen Bewertungen auf Google!",
+    "reviewsPride": "Wir sind stolz auf das Feedback unserer Kunden, sehen Sie unsere aktuellen Bewertungen auf Google!",
+    "reviewsUnavailable": "Wir sind stolz auf das Feedback unserer Kunden, sehen Sie unsere aktuellen Bewertungen auf Google!",
     "reviewsOnGoogle": "Bewertungen auf Google ansehen",
     "reviewsCount": "{count} Bewertungen",
     "socialTitle": "Bleiben Sie verbunden",
@@ -64,12 +64,12 @@
     "showcase": {
       "title": "Reinigungsdienste für jeden Raum",
       "subtitle": "Sauberere Räume mit unserem Detail-Clean-Rotationssystem",
-      "body": "Bei SM Nettoyage folgen wir einem strukturierten Rotationssystem für die Tiefenreinigung aller Leistungen: Wohnungen, Büros, Fenster, Endreinigung nach Bau sowie Vor-/Nachumzug. So gewährleisten wir konsequente, gründliche Hygiene in jedem Raum — abgestimmt auf Ihre Bedürfnisse. Bei SM Nettoyage ist Sauberkeit kein Zufall, sondern Garantie.",
+      "body": "Bei SM Nettoyage folgen wir einem strukturierten Rotationssystem für die Tiefenreinigung aller Leistungen: Wohnungen, Büros, Fenster, Endreinigung nach Bau sowie Vor-/Nachumzug. So gewährleisten wir konsequente, gründliche Hygiene in jedem Raum, abgestimmt auf Ihre Bedürfnisse. Bei SM Nettoyage ist Sauberkeit kein Zufall, sondern Garantie.",
       "cta": "Unsere Dienstleistungen entdecken"
     },
     "process": {
       "title": "So funktioniert’s",
-      "subtitle": "Ein klarer, professioneller Ablauf — von der Anfrage bis zum Einsatz.",
+      "subtitle": "Ein klarer, professioneller Ablauf, von der Anfrage bis zum Einsatz.",
       "steps": {
         "1": {
           "title": "Anfrage",
@@ -87,19 +87,19 @@
     },
     "coverage": {
       "title": "Einsatzgebiet",
-      "body": "Mit Sitz an der {street} in {city} sind wir in der Region Freiburg und Umgebung für Sie da. Wo immer Sie in der Nähe sind — wir kommen."
+      "body": "Mit Sitz an der {street} in {city} sind wir in der Region Freiburg und Umgebung für Sie da. Wo immer Sie in der Nähe sind, wir kommen."
     }
   },
   "services": {
     "home": {
       "title": "Wohnungsreinigung",
-      "short": "Gründliche Reinigung für Wohnungen und Häuser — Küche, Bad, Wohnräume und mehr.",
+      "short": "Gründliche Reinigung für Wohnungen und Häuser, Küche, Bad, Wohnräume und mehr.",
       "long": "Regelmäßige oder einmalige Haushaltsreinigung: Staubwischen, Böden, Küche, Bäder und häufig berührte Flächen. Wir passen uns Ihren Wünschen an."
     },
     "office": {
       "title": "Büroreinigung",
       "short": "Professionelle Reinigung am Arbeitsplatz für produktive und einladende Räume.",
-      "long": "Geplante Büroreinigung für Schreibtische, Sitzungszimmer, Küchen und Gemeinschaftsbereiche. Diskret und zuverlässig — außerhalb oder während der Arbeitszeit."
+      "long": "Geplante Büroreinigung für Schreibtische, Sitzungszimmer, Küchen und Gemeinschaftsbereiche. Diskret und zuverlässig, außerhalb oder während der Arbeitszeit."
     },
     "windows": {
       "title": "Fensterreinigung",
@@ -109,33 +109,35 @@
     "construction": {
       "title": "Endreinigung nach Bau",
       "short": "Nachrenovierungsreinigung, die Staub, Schutt und Rückstände entfernt.",
-      "long": "Detailierte Reinigung nach Bau oder Renovation — Feinstaub, Klebereste, Böden und Armaturen — damit der fertige Raum sofort nutzbar ist."
+      "long": "Detailierte Reinigung nach Bau oder Renovation, Feinstaub, Klebereste, Böden und Armaturen, damit der fertige Raum sofort nutzbar ist."
     },
     "moving": {
       "title": "Reinigung vor / nach Umzug",
-      "short": "Hausreinigung vor dem Einzug oder nach dem Auszug — ein sauberer Start an jeder Adresse.",
+      "short": "Hausreinigung vor dem Einzug oder nach dem Auszug, ein sauberer Start an jeder Adresse.",
       "long": "Tiefenreinigung von Häusern vor der Übergabe oder nach der Ankunft. Leere Räume, Schränke, Böden und Bäder für einen sicheren Schlüsselübergang."
     }
   },
   "servicesPage": {
     "title": "Unsere Leistungen",
-    "subtitle": "Wählen Sie die passende Reinigung — und buchen Sie in wenigen Klicks.",
+    "subtitle": "Wählen Sie die passende Reinigung, und buchen Sie in wenigen Klicks.",
     "bookCta": "Jetzt buchen"
   },
   "about": {
     "title": "Über uns",
-    "subtitle": "Ein Reinigungspartner, dem Sie vertrauen können — Sauberkeit, Zuverlässigkeit und Sorgfalt bei jedem Einsatz.",
+    "subtitle": "Ein Reinigungspartner, dem Sie vertrauen können, Sauberkeit, Zuverlässigkeit und Sorgfalt bei jedem Einsatz.",
     "storyTitle": "Wer wir sind",
     "storyBody": "Bei SM Nettoyage bietet unser erfahrenes und professionelles Team Reinigungsdienstleistungen auf hohem Niveau für Wohnungen, Büros und Gewerberäume. In unserem Team arbeiten Fachkräfte mit CFC-Abschluss, und alle Arbeiten werden mit moderner Ausrüstung und professionellen Reinigungsmethoden ausgeführt. Dank unserem zuverlässigen, sorgfältigen und kundenorientierten Ansatz verwandeln wir Ihre Wohn- und Arbeitsräume in hygienische, gesunde und angenehme Umgebungen. Während Sie sich auf Ihren Alltag konzentrieren, können Sie die Reinigung ruhigen Gewissens uns überlassen.",
+    "missionTitle": "Unsere Mission",
+    "missionBody": "Jeder Kundin und jedem Kunden eine professionelle, zuverlässige und sorgfältige Reinigung zu bieten, die Komfort, Hygiene und Ruhe in den Alltag bringt. Mit unserer Expertise, unserem geschulten Team und hochwertiger Ausrüstung betreuen wir Wohnungen, Büros und Gewerberäume für nachhaltige Ergebnisse und eine vertrauensvolle Zusammenarbeit.",
     "valuesTitle": "Wofür wir stehen",
     "value1Title": "Zuverlässigkeit",
     "value1Body": "Klare Kommunikation, pünktliche Ankunft und gleichbleibende Qualität.",
     "value2Title": "Sorgfalt",
-    "value2Body": "Respekt für Ihr Zuhause, Ihren Arbeitsplatz und Ihr Eigentum — jede Fläche, jedes Mal.",
+    "value2Body": "Respekt für Ihr Zuhause, Ihren Arbeitsplatz und Ihr Eigentum, jede Fläche, jedes Mal.",
     "value3Title": "Flexibilität",
     "value3Body": "Von einmaligen Tiefenreinigungen bis zu festen Intervallen passen wir uns Ihrem Alltag an.",
     "ctaTitle": "Bereit für mehr Sauberkeit?",
-    "ctaBody": "Sagen Sie uns, was Sie brauchen — wir erstellen ein kostenloses Angebot."
+    "ctaBody": "Sagen Sie uns, was Sie brauchen, wir erstellen ein kostenloses Angebot."
   },
   "booking": {
     "title": "Reinigung buchen",
@@ -162,7 +164,7 @@
     "submit": "Buchung anfragen",
     "submitEmail": "Per E-Mail senden",
     "submitWhatsApp": "Via WhatsApp senden",
-    "mailSubject": "Buchungsanfrage — SM Nettoyage",
+    "mailSubject": "Buchungsanfrage : SM Nettoyage",
     "errors": {
       "name": "Bitte geben Sie Ihren Namen ein",
       "email": "Bitte geben Sie eine gültige E-Mail ein",
@@ -194,7 +196,7 @@
     "message": "Nachricht / CV-Hinweis",
     "messagePlaceholder": "Erzählen Sie uns von Erfahrung und Verfügbarkeit…",
     "submit": "Bewerbung senden",
-    "mailSubject": "Bewerbung — SM Nettoyage",
+    "mailSubject": "Bewerbung : SM Nettoyage",
     "errors": {
       "name": "Bitte geben Sie Ihren Namen ein",
       "email": "Bitte geben Sie eine gültige E-Mail ein",
@@ -205,7 +207,7 @@
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Wir sind für Sie da — fordern Sie ein kostenloses Angebot an oder stellen Sie eine Frage.",
+    "subtitle": "Wir sind für Sie da, fordern Sie ein kostenloses Angebot an oder stellen Sie eine Frage.",
     "infoTitle": "Kontakt aufnehmen",
     "channelsTitle": "Schreiben oder buchen",
     "whatsappLabel": "WhatsApp",
@@ -228,7 +230,7 @@
       },
       {
         "name": "Luca R.",
-        "text": "Die Endreinigung nach der Renovation war perfekt — kein Staub übrig.",
+        "text": "Die Endreinigung nach der Renovation war perfekt, kein Staub übrig.",
         "rating": 5
       },
       {

@@ -21,6 +21,7 @@ import {
   openWhatsApp,
 } from "@/lib/whatsapp";
 import { LocaleDatePicker } from "@/components/LocaleDatePicker";
+import { WhatsAppIcon } from "@/components/WhatsAppButton";
 
 type Errors = Partial<Record<string, string>>;
 type SubmitChannel = "email" | "whatsapp";
@@ -114,7 +115,7 @@ export function BookingForm() {
       `Additional address: ${payload.addressExtra || "-"}`,
       `Preferred date: ${payload.date}`,
       `Preferred time: ${payload.time}`,
-      `Notes: ${payload.notes || "-"}`,
+      `Notes: ${payload.notes}`,
     ].join("\n");
 
     setSubmitting(true);
@@ -313,9 +314,10 @@ export function BookingForm() {
           type="submit"
           name="channel"
           value="whatsapp"
-          className="btn-secondary min-h-11 w-full sm:w-auto"
+          className="btn-whatsapp min-h-11 w-full sm:w-auto"
           disabled={submitting}
         >
+          <WhatsAppIcon />
           {t("submitWhatsApp")}
         </button>
       </div>

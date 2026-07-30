@@ -35,7 +35,7 @@ export function Logo({ className = "", size = "header" }: LogoProps) {
     >
       <Image
         src="/logo-sm-nettoyage-clear.png"
-        alt="SM Nettoyage — Propreté, Fiabilité, Qualité"
+        alt="SM Nettoyage : Propreté, Fiabilité, Qualité"
         width={dimensions.width}
         height={dimensions.height}
         priority={size === "header"}

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "SM Nettoyage — Professional Cleaning Services",
-    "description": "Wherever you are, we will be there — professional home, office, window, construction, and moving cleaning services."
+    "title": "SM Nettoyage : Professional Cleaning Services",
+    "description": "Wherever you are, we will be there, professional home, office, window, construction, and moving cleaning services."
   },
   "nav": {
     "home": "Home",
@@ -40,7 +40,7 @@
     "stay": "Keep French"
   },
   "home": {
-    "heroTagline": "Cleanliness is our priority — every space, every time",
+    "heroTagline": "Cleanliness is our priority, every space, every time",
     "heroLead": "We put our entire team of professionals and cutting-edge equipment at your service.",
     "heroDifference": "SM Nettoyage makes the difference.",
     "introTitle": "Cleaning done with care",
@@ -52,8 +52,8 @@
     "reviewsSubtitle": "Genuine customer feedback from Google.",
     "reviewsNote": "",
     "reviewsLoading": "Loading Google reviews…",
-    "reviewsPride": "We're proud of the feedback from our clients — check out our latest reviews on Google!",
-    "reviewsUnavailable": "We're proud of the feedback from our clients — check out our latest reviews on Google!",
+    "reviewsPride": "We're proud of the feedback from our clients, check out our latest reviews on Google!",
+    "reviewsUnavailable": "We're proud of the feedback from our clients, check out our latest reviews on Google!",
     "reviewsOnGoogle": "See reviews on Google",
     "reviewsCount": "{count} reviews",
     "socialTitle": "Stay connected",
@@ -69,7 +69,7 @@
     },
     "process": {
       "title": "How it works",
-      "subtitle": "A simple, clear path — from your request to our visit.",
+      "subtitle": "A simple, clear path, from your request to our visit.",
       "steps": {
         "1": {
           "title": "Request",
@@ -93,7 +93,7 @@
   "services": {
     "home": {
       "title": "Home Cleaning",
-      "short": "Thorough cleaning for apartments and houses — kitchens, bathrooms, living areas, and more.",
+      "short": "Thorough cleaning for apartments and houses, kitchens, bathrooms, living areas, and more.",
       "long": "Regular or one-off home cleaning that covers dusting, floors, kitchens, bathrooms, and high-touch surfaces. We adapt to your preferences so your home feels fresh every visit."
     },
     "office": {
@@ -109,33 +109,35 @@
     "construction": {
       "title": "After-Construction Cleaning",
       "short": "Post-renovation cleanup that removes dust, debris, and residue so the space is move-in ready.",
-      "long": "Detailed cleaning after building or renovation work — fine dust, adhesive residue, floors, and fixtures — so you can enjoy the finished space without the mess."
+      "long": "Detailed cleaning after building or renovation work, fine dust, adhesive residue, floors, and fixtures, so you can enjoy the finished space without the mess."
     },
     "moving": {
       "title": "After-Moving & Pre-Moving Cleaning",
-      "short": "House cleaning before you move in or after you move out — for a clean start at every address.",
+      "short": "House cleaning before you move in or after you move out, for a clean start at every address.",
       "long": "Deep cleaning for houses before handover or after arrival. Empty-home cleans, cupboards, floors, and bathrooms so keys are exchanged with confidence."
     }
   },
   "servicesPage": {
     "title": "Our services",
-    "subtitle": "Choose the cleaning that fits your needs — then book in a few clicks.",
+    "subtitle": "Choose the cleaning that fits your needs, then book in a few clicks.",
     "bookCta": "Book Now"
   },
   "about": {
     "title": "About Us",
-    "subtitle": "A cleaning partner you can trust — cleanliness, reliability, and care in every visit.",
+    "subtitle": "A cleaning partner you can trust, cleanliness, reliability, and care in every visit.",
     "storyTitle": "Who we are",
     "storyBody": "At SM Nettoyage, our experienced and professional team delivers high-standard cleaning services for homes, offices, and commercial spaces. Our team includes specialists holding the CFC certificate, and all our work is carried out with modern equipment and professional cleaning methods. Through our reliable, meticulous, and client-focused approach, we transform your living and working spaces into hygienic, healthy, and fresh environments. While you focus on your daily life, you can safely leave the cleaning to us.",
+    "missionTitle": "Our mission",
+    "missionBody": "To deliver professional, reliable, and careful cleaning that brings comfort, hygiene, and peace of mind every day. We put our expertise, trained team, and quality equipment at the service of homes, offices, and commercial spaces, for lasting results and a relationship built on trust.",
     "valuesTitle": "What we stand for",
     "value1Title": "Reliability",
     "value1Body": "Clear communication, punctual arrivals, and consistent quality you can plan around.",
     "value2Title": "Care",
-    "value2Body": "Respect for your home, workplace, and belongings — every surface, every time.",
+    "value2Body": "Respect for your home, workplace, and belongings, every surface, every time.",
     "value3Title": "Flexibility",
     "value3Body": "From one-off deep cleans to recurring schedules, we adapt to your life and business.",
     "ctaTitle": "Ready for a cleaner space?",
-    "ctaBody": "Tell us what you need — we will prepare a free quote."
+    "ctaBody": "Tell us what you need, we will prepare a free quote."
   },
   "booking": {
     "title": "Booking a Clean",
@@ -162,7 +164,7 @@
     "submit": "Request booking",
     "submitEmail": "Send by email",
     "submitWhatsApp": "Send via WhatsApp",
-    "mailSubject": "Booking request — SM Nettoyage",
+    "mailSubject": "Booking request : SM Nettoyage",
     "errors": {
       "name": "Please enter your name",
       "email": "Please enter a valid email",
@@ -194,7 +196,7 @@
     "message": "Message / CV note",
     "messagePlaceholder": "Tell us about your experience and availability…",
     "submit": "Send application",
-    "mailSubject": "Job application — SM Nettoyage",
+    "mailSubject": "Job application : SM Nettoyage",
     "errors": {
       "name": "Please enter your name",
       "email": "Please enter a valid email",
@@ -205,7 +207,7 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "We are here to help — request a free quote or ask a question.",
+    "subtitle": "We are here to help, request a free quote or ask a question.",
     "infoTitle": "Get in touch",
     "channelsTitle": "Write or book",
     "whatsappLabel": "WhatsApp",
@@ -228,7 +230,7 @@
       },
       {
         "name": "Luca R.",
-        "text": "They handled our post-renovation clean perfectly — no dust left behind.",
+        "text": "They handled our post-renovation clean perfectly, no dust left behind.",
         "rating": 5
       },
       {
