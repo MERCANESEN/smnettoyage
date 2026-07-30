@@ -1,12 +1,14 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ContactForm } from "@/components/ContactForm";
+import { Link } from "@/i18n/navigation";
 import { SocialIcons } from "@/components/SocialIcons";
 import {
   COMPANY_ADDRESS_FULL,
   COMPANY_EMAIL,
   COMPANY_PHONE,
   COMPANY_PHONE_TEL,
+  COMPANY_WHATSAPP_URL,
 } from "@/lib/constants";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -17,6 +19,7 @@ export default async function ContactPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("contact");
   const tc = await getTranslations("common");
+  const whatsappHref = buildWhatsAppUrl(t("whatsappPrefill"));
 
   return (
     <div className="pb-20">
@@ -30,8 +33,8 @@ export default async function ContactPage({ params }: Props) {
       </section>
 
       <section className="py-14 sm:py-16">
-        <div className="section-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <aside className="space-y-6 rounded-2xl border border-brand-line bg-white/80 p-6 sm:p-8">
+        <div className="section-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10">
+          <aside className="min-w-0 space-y-6 rounded-2xl border border-brand-line bg-white/80 p-5 sm:p-8">
             <h2 className="font-display text-2xl font-semibold text-brand-deep">
               {t("infoTitle")}
             </h2>
@@ -48,6 +51,19 @@ export default async function ContactPage({ params }: Props) {
                 </span>
                 <a
                   href={`tel:${COMPANY_PHONE_TEL}`}
+                  className="text-brand-sky hover:underline"
+                >
+                  {COMPANY_PHONE}
+                </a>
+              </p>
+              <p>
+                <span className="block font-semibold text-brand-ink">
+                  {t("whatsappLabel")}
+                </span>
+                <a
+                  href={COMPANY_WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-brand-sky hover:underline"
                 >
                   {COMPANY_PHONE}
@@ -79,7 +95,35 @@ export default async function ContactPage({ params }: Props) {
             </div>
           </aside>
 
-          <ContactForm />
+          <div className="min-w-0 space-y-6 rounded-2xl border border-brand-line bg-white p-5 sm:p-8">
+            <h2 className="font-display text-2xl font-semibold text-brand-deep">
+              {t("channelsTitle")}
+            </h2>
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex min-h-11 w-full items-center justify-center sm:w-auto"
+              >
+                {t("whatsappCta")}
+              </a>
+              <a
+                href={`mailto:${COMPANY_EMAIL}`}
+                className="btn-secondary inline-flex min-h-11 w-full items-center justify-center sm:w-auto"
+              >
+                {t("emailCta")}
+              </a>
+            </div>
+            <p className="text-sm text-brand-muted">
+              <Link
+                href="/booking"
+                className="font-semibold text-brand-sky underline-offset-2 hover:underline"
+              >
+                {t("bookingCta")}
+              </Link>
+            </p>
+          </div>
         </div>
       </section>
     </div>

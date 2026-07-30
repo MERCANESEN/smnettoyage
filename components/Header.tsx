@@ -21,8 +21,8 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-brand-line/70 bg-white/90 backdrop-blur-md">
-      <div className="section-shell flex items-center justify-between gap-3 py-2.5 sm:gap-4 sm:py-3">
-        <Logo size="header" />
+      <div className="section-shell flex min-w-0 items-center justify-between gap-2 py-2 sm:gap-4 sm:py-3">
+        <Logo size="header" className="min-w-0" />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
           {NAV_ITEMS.map((item) => {

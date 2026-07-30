@@ -10,11 +10,14 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
   },
+  images: {
+    qualities: [75, 90, 92],
+  },
   ...(isStaticExport
     ? {
         // For Hostinger File Manager / public_html (same method as your current live site)
         output: "export" as const,
-        images: { unoptimized: true },
+        images: { unoptimized: true, qualities: [75, 90, 92] },
         trailingSlash: true,
       }
     : {

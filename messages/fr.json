@@ -66,6 +66,28 @@
       "subtitle": "Des espaces plus propres grâce à notre système de rotation Detail-Clean",
       "body": "Chez SM Nettoyage, nous suivons un système de rotation structuré pour un nettoyage en profondeur de tous nos services : maisons, bureaux, vitres, après travaux et avant/après déménagement. Cela garantit une hygiène constante et soignée dans chaque espace, adaptée à vos besoins. Avec SM Nettoyage, la propreté n’est pas occasionnelle — elle est garantie.",
       "cta": "Découvrir nos services"
+    },
+    "process": {
+      "title": "Comment ça se passe",
+      "subtitle": "Un parcours simple, clair et professionnel — de la demande à l’intervention.",
+      "steps": {
+        "1": {
+          "title": "Demande",
+          "body": "Décrivez votre espace et vos besoins via le formulaire de devis ou de réservation."
+        },
+        "2": {
+          "title": "Confirmation",
+          "body": "Nous vous recontactons rapidement pour confirmer le créneau et les détails."
+        },
+        "3": {
+          "title": "Intervention",
+          "body": "Notre équipe arrive à l’heure, équipée, et laisse un résultat soigné et fiable."
+        }
+      }
+    },
+    "coverage": {
+      "title": "Zone d’intervention",
+      "body": "Basés à {street}, {city}, nous intervenons dans la région de Fribourg et les environs. Où que vous soyez à proximité, nous serons là."
     }
   },
   "services": {
@@ -102,9 +124,9 @@
   },
   "about": {
     "title": "À propos",
-    "subtitle": "Un partenaire de nettoyage de confiance.",
+    "subtitle": "Un partenaire de nettoyage de confiance — propreté, fiabilité et soin à chaque visite.",
     "storyTitle": "Qui sommes-nous",
-    "storyBody": "SM Nettoyage repose sur une promesse simple : être là où vous êtes, quand vous en avez besoin, et prendre soin de votre espace comme du nôtre. Professionnels formés, planning fiable et souci du détail — Soin à chaque visite.",
+    "storyBody": "Chez SM Nettoyage, notre équipe expérimentée et professionnelle propose des services de nettoyage de haut niveau pour les maisons, les bureaux et les espaces commerciaux. Notre équipe compte des collaborateurs spécialisés titulaires du CFC, et tous nos travaux sont réalisés avec des équipements modernes et des méthodes de nettoyage professionnelles. Grâce à notre approche fiable, soignée et centrée sur le client, nous transformons vos espaces de vie et de travail en environnements hygiéniques, sains et agréables. Pendant que vous vous concentrez sur votre quotidien, confiez-nous le nettoyage en toute sérénité.",
     "valuesTitle": "Nos valeurs",
     "value1Title": "Fiabilité",
     "value1Body": "Communication claire, ponctualité et qualité constante sur lesquelles vous pouvez compter.",
@@ -119,6 +141,9 @@
     "title": "Réserver un nettoyage",
     "subtitle": "Indiquez votre espace et vos disponibilités. Nous vous recontacterons pour confirmer.",
     "formTitle": "Demande de réservation",
+    "asideTitle": "Ce qu’il faut savoir",
+    "asideHours": "Service client : {hours}",
+    "asideBody": "Après votre demande, nous confirmons le créneau par e-mail ou téléphone. Notre équipe applique une approche Detail-Clean pour un résultat soigné et fiable.",
     "name": "Nom complet",
     "email": "E-mail",
     "phone": "Téléphone",
@@ -135,6 +160,8 @@
     "notes": "Remarques",
     "notesPlaceholder": "Codes d’accès, animaux, demandes particulières…",
     "submit": "Demander une réservation",
+    "submitEmail": "Envoyer par e-mail",
+    "submitWhatsApp": "Envoyer via WhatsApp",
     "mailSubject": "Demande de réservation — SM Nettoyage",
     "errors": {
       "name": "Veuillez indiquer votre nom",
@@ -180,20 +207,12 @@
     "title": "Contact",
     "subtitle": "Nous sommes là pour vous — demandez un devis gratuit ou posez une question.",
     "infoTitle": "Nous contacter",
-    "formTitle": "Envoyer un message",
-    "name": "Nom complet",
-    "email": "E-mail",
-    "phone": "Téléphone",
-    "message": "Message",
-    "messagePlaceholder": "Comment pouvons-nous vous aider ?",
-    "submit": "Envoyer le message",
-    "mailSubject": "Contact — SM Nettoyage",
-    "errors": {
-      "name": "Veuillez indiquer votre nom",
-      "email": "Veuillez indiquer un e-mail valide",
-      "phone": "Veuillez indiquer un numéro de téléphone valide",
-      "message": "Veuillez indiquer votre message"
-    }
+    "channelsTitle": "Écrire ou réserver",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": "Écrire sur WhatsApp",
+    "whatsappPrefill": "Bonjour, je souhaite un devis…",
+    "emailCta": "Envoyer un e-mail",
+    "bookingCta": "Réserver un nettoyage"
   },
   "footer": {
     "tagline": "Soin à chaque visite",

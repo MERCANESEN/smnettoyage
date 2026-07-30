@@ -16,9 +16,14 @@ import { useTranslations } from "next-intl";
 import { SERVICE_IDS, type ServiceId } from "@/lib/constants";
 import { getBookingTimeSlots, isValidSwissPlz } from "@/lib/form-helpers";
 import { isValidEmail, openMailto } from "@/lib/mailto";
+import {
+  formatBookingWhatsAppMessage,
+  openWhatsApp,
+} from "@/lib/whatsapp";
 import { LocaleDatePicker } from "@/components/LocaleDatePicker";
 
 type Errors = Partial<Record<string, string>>;
+type SubmitChannel = "email" | "whatsapp";
 
 function shouldFallbackToMailto(status: number, error?: string) {
   return (
@@ -44,6 +49,7 @@ export function BookingForm() {
   const [success, setSuccess] = useState(false);
   const [errors, setErrors] = useState<Errors>({});
   const [submitting, setSubmitting] = useState(false);
+  const [submitChannel, setSubmitChannel] = useState<SubmitChannel | null>(null);
   const [serverError, setServerError] = useState<string | null>(null);
 
   const timeSlots = useMemo(() => getBookingTimeSlots(), []);
@@ -71,22 +77,14 @@ export function BookingForm() {
     return next;
   }
 
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setServerError(null);
-    const formEl = event.currentTarget;
-    const form = new FormData(formEl);
-    const nextErrors = validate(form);
-    setErrors(nextErrors);
-    if (Object.keys(nextErrors).length) return;
-
+  function getPayload(form: FormData) {
     const street = String(form.get("street") || "").trim();
     const plz = String(form.get("plz") || "").trim();
     const town = String(form.get("town") || "").trim();
     const addressExtra = String(form.get("addressExtra") || "").trim();
     const addressLine2 = `${plz} ${town}`;
 
-    const payload = {
+    return {
       name: String(form.get("name") || "").trim(),
       email: String(form.get("email") || "").trim(),
       phone: String(form.get("phone") || "").trim(),
@@ -101,7 +99,11 @@ export function BookingForm() {
       notes: String(form.get("notes") || "").trim(),
       website: String(form.get("website") || ""),
     };
+  }
 
+  async function submitByEmail(formEl: HTMLFormElement, form: FormData) {
+    const payload = getPayload(form);
+    const addressLine2 = `${payload.plz} ${payload.town}`;
     const mailtoBody = [
       `Name: ${payload.name}`,
       `Email: ${payload.email}`,
@@ -116,6 +118,7 @@ export function BookingForm() {
     ].join("\n");
 
     setSubmitting(true);
+    setSubmitChannel("email");
     try {
       const res = await fetch("/api/booking", {
         method: "POST",
@@ -149,7 +152,43 @@ export function BookingForm() {
       setSuccess(true);
     } finally {
       setSubmitting(false);
+      setSubmitChannel(null);
     }
+  }
+
+  function submitByWhatsApp(formEl: HTMLFormElement, form: FormData) {
+    const payload = getPayload(form);
+    const serviceId = payload.service as ServiceId;
+    const serviceLabel = SERVICE_IDS.includes(serviceId)
+      ? ts(`${serviceId}.title`)
+      : payload.service;
+
+    openWhatsApp(formatBookingWhatsAppMessage(payload, serviceLabel));
+    formEl.reset();
+    setSuccess(true);
+  }
+
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setServerError(null);
+    const formEl = event.currentTarget;
+    const form = new FormData(formEl);
+    const nextErrors = validate(form);
+    setErrors(nextErrors);
+    if (Object.keys(nextErrors).length) return;
+
+    const submitter = (event.nativeEvent as SubmitEvent).submitter as
+      | HTMLButtonElement
+      | null;
+    const channel =
+      submitter?.value === "whatsapp" ? "whatsapp" : "email";
+
+    if (channel === "whatsapp") {
+      submitByWhatsApp(formEl, form);
+      return;
+    }
+
+    await submitByEmail(formEl, form);
   }
 
   if (success) {
@@ -258,13 +297,28 @@ export function BookingForm() {
 
       {serverError ? <p className="form-error text-sm">{serverError}</p> : null}
 
-      <button
-        type="submit"
-        className="btn-primary min-h-11 w-full sm:w-auto"
-        disabled={submitting}
-      >
-        {submitting ? tc("sending") : t("submit")}
-      </button>
+      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <button
+          type="submit"
+          name="channel"
+          value="email"
+          className="btn-primary min-h-11 w-full sm:w-auto"
+          disabled={submitting}
+        >
+          {submitting && submitChannel === "email"
+            ? tc("sending")
+            : t("submitEmail")}
+        </button>
+        <button
+          type="submit"
+          name="channel"
+          value="whatsapp"
+          className="btn-secondary min-h-11 w-full sm:w-auto"
+          disabled={submitting}
+        >
+          {t("submitWhatsApp")}
+        </button>
+      </div>
     </form>
   );
 }

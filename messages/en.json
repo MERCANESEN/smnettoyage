@@ -66,6 +66,28 @@
       "subtitle": "Keeping Every Space Cleaner With Our Detail-Clean Rotation System",
       "body": "At SM Nettoyage, we follow a structured rotation system to deep clean every service we offer; homes, offices, windows, after-construction cleaning, and move-in/move-out cleaning. This ensures consistent, thorough sanitation across every space, tailored to your specific needs. With SM Nettoyage, cleanliness isn't occasional, it's guaranteed.",
       "cta": "Learn About Our Services"
+    },
+    "process": {
+      "title": "How it works",
+      "subtitle": "A simple, clear path — from your request to our visit.",
+      "steps": {
+        "1": {
+          "title": "Request",
+          "body": "Tell us about your space and needs through our quote or booking form."
+        },
+        "2": {
+          "title": "Confirmation",
+          "body": "We follow up quickly to confirm the time slot and the details."
+        },
+        "3": {
+          "title": "Visit",
+          "body": "Our team arrives on time, fully equipped, and leaves a careful, reliable result."
+        }
+      }
+    },
+    "coverage": {
+      "title": "Service area",
+      "body": "Based at {street}, {city}, we work across the Fribourg region and nearby. Wherever you are nearby, we will be there."
     }
   },
   "services": {
@@ -102,9 +124,9 @@
   },
   "about": {
     "title": "About Us",
-    "subtitle": "A cleaning partner you can trust.",
+    "subtitle": "A cleaning partner you can trust — cleanliness, reliability, and care in every visit.",
     "storyTitle": "Who we are",
-    "storyBody": "SM Nettoyage was built on a simple promise: show up wherever you are, whenever you need us, and take care of your space as if it were our own. We combine trained professionals, dependable scheduling, and careful attention to detail — Care in every visit.",
+    "storyBody": "At SM Nettoyage, our experienced and professional team delivers high-standard cleaning services for homes, offices, and commercial spaces. Our team includes specialists holding the CFC certificate, and all our work is carried out with modern equipment and professional cleaning methods. Through our reliable, meticulous, and client-focused approach, we transform your living and working spaces into hygienic, healthy, and fresh environments. While you focus on your daily life, you can safely leave the cleaning to us.",
     "valuesTitle": "What we stand for",
     "value1Title": "Reliability",
     "value1Body": "Clear communication, punctual arrivals, and consistent quality you can plan around.",
@@ -119,6 +141,9 @@
     "title": "Booking a Clean",
     "subtitle": "Tell us about your space and preferred time. We will follow up to confirm.",
     "formTitle": "Request a booking",
+    "asideTitle": "Good to know",
+    "asideHours": "Customer service: {hours}",
+    "asideBody": "After you send a request, we confirm the time slot by email or phone. Our team follows a Detail-Clean approach for a careful, reliable result.",
     "name": "Full name",
     "email": "Email",
     "phone": "Phone",
@@ -135,6 +160,8 @@
     "notes": "Notes",
     "notesPlaceholder": "Access codes, pets, special requests…",
     "submit": "Request booking",
+    "submitEmail": "Send by email",
+    "submitWhatsApp": "Send via WhatsApp",
     "mailSubject": "Booking request — SM Nettoyage",
     "errors": {
       "name": "Please enter your name",
@@ -180,20 +207,12 @@
     "title": "Contact",
     "subtitle": "We are here to help — request a free quote or ask a question.",
     "infoTitle": "Get in touch",
-    "formTitle": "Send a message",
-    "name": "Full name",
-    "email": "Email",
-    "phone": "Phone",
-    "message": "Message",
-    "messagePlaceholder": "How can we help?",
-    "submit": "Send message",
-    "mailSubject": "Contact — SM Nettoyage",
-    "errors": {
-      "name": "Please enter your name",
-      "email": "Please enter a valid email",
-      "phone": "Please enter a valid phone number",
-      "message": "Please enter your message"
-    }
+    "channelsTitle": "Write or book",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": "Message on WhatsApp",
+    "whatsappPrefill": "Hello, I would like a quote…",
+    "emailCta": "Send an email",
+    "bookingCta": "Book a cleaning"
   },
   "footer": {
     "tagline": "Care in every visit",

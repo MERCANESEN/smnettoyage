@@ -10,12 +10,12 @@ const SIZES = {
   header: {
     width: 168,
     height: 168,
-    className: "h-16 w-auto sm:h-[4.75rem]",
+    className: "h-12 w-auto max-w-[9.5rem] sm:h-[4.75rem] sm:max-w-none",
   },
   footer: {
     width: 200,
     height: 200,
-    className: "h-24 w-auto sm:h-28",
+    className: "h-20 w-auto sm:h-24 md:h-28",
   },
   hero: {
     width: 280,

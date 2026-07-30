@@ -3,6 +3,8 @@ export const COMPANY_DOMAIN = "https://smnettoyage.ch";
 export const COMPANY_EMAIL = "info@smnettoyage.ch";
 export const COMPANY_PHONE = "+41 78 230 79 54";
 export const COMPANY_PHONE_TEL = "+41782307954";
+export const COMPANY_WHATSAPP = "41782307954";
+export const COMPANY_WHATSAPP_URL = `https://wa.me/${COMPANY_WHATSAPP}`;
 export const COMPANY_ADDRESS = {
   street: "Rue des Agges",
   postalCode: "1635",
@@ -28,3 +30,12 @@ export const SERVICE_IDS = [
 ] as const;
 
 export type ServiceId = (typeof SERVICE_IDS)[number];
+
+/** Real photos matched to each service category */
+export const SERVICE_IMAGES: Record<ServiceId, string> = {
+  home: "/services/homes.png",
+  office: "/services/offices.png",
+  windows: "/services/windows.png",
+  construction: "/services/construction.png",
+  moving: "/slider/hero-2.png",
+};

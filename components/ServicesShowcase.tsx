@@ -3,12 +3,11 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SERVICE_SHOWCASE } from "@/lib/form-helpers";
 
-/** Native file sizes — render full photo, no crop / no letterbox */
 const SHOWCASE_META = {
-  homes: { serviceKey: "home", width: 1024, height: 681 },
-  offices: { serviceKey: "office", width: 1024, height: 682 },
-  windows: { serviceKey: "windows", width: 682, height: 1024 },
-  construction: { serviceKey: "construction", width: 682, height: 1024 },
+  homes: { serviceKey: "home" },
+  offices: { serviceKey: "office" },
+  windows: { serviceKey: "windows" },
+  construction: { serviceKey: "construction" },
 } as const;
 
 export async function ServicesShowcase() {
@@ -16,23 +15,21 @@ export async function ServicesShowcase() {
   const ts = await getTranslations("services");
 
   return (
-    <section className="py-16 sm:py-20">
-      <div className="section-shell grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
-        <div className="grid grid-cols-2 items-start gap-3 sm:gap-4">
+    <section className="py-12 sm:py-16 lg:py-20">
+      <div className="section-shell grid items-start gap-8 lg:grid-cols-2 lg:gap-14">
+        <div className="grid grid-cols-2 gap-2.5 sm:gap-4">
           {SERVICE_SHOWCASE.map((item) => {
             const meta = SHOWCASE_META[item.id];
             return (
               <figure
                 key={item.id}
-                className="overflow-hidden rounded-2xl border border-brand-line bg-brand-mist shadow-[0_10px_28px_rgba(11,79,138,0.08)]"
+                className="relative aspect-[4/3] overflow-hidden rounded-xl border border-brand-line bg-brand-mist shadow-[0_10px_28px_rgba(11,79,138,0.08)] sm:rounded-2xl"
               >
                 <Image
                   src={item.src}
                   alt={ts(`${meta.serviceKey}.title`)}
-                  width={meta.width}
-                  height={meta.height}
-                  quality={92}
-                  className="h-auto w-full max-w-none"
+                  fill
+                  className="object-cover object-center"
                   sizes="(max-width: 1024px) 50vw, 28vw"
                 />
               </figure>
@@ -41,16 +38,16 @@ export async function ServicesShowcase() {
         </div>
 
         <div className="lg:sticky lg:top-28">
-          <h2 className="font-display text-3xl font-semibold text-brand-deep sm:text-4xl">
+          <h2 className="font-display text-2xl font-semibold text-brand-deep sm:text-3xl lg:text-4xl">
             {t("showcase.title")}
           </h2>
-          <p className="mt-4 text-lg font-semibold text-brand-sky sm:text-xl">
+          <p className="mt-3 text-base font-semibold text-brand-sky sm:mt-4 sm:text-lg lg:text-xl">
             {t("showcase.subtitle")}
           </p>
-          <p className="mt-5 text-base leading-relaxed text-brand-muted sm:text-lg">
+          <p className="mt-4 text-sm leading-relaxed text-brand-muted sm:mt-5 sm:text-base lg:text-lg">
             {t("showcase.body")}
           </p>
-          <Link href="/services" className="btn-primary mt-8 min-h-11">
+          <Link href="/services" className="btn-primary mt-6 min-h-11 sm:mt-8">
             {t("showcase.cta")}
           </Link>
         </div>

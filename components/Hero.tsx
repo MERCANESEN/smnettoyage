@@ -23,7 +23,7 @@ export function Hero() {
 
   return (
     <section
-      className="relative isolate h-[min(86vh,900px)] w-full overflow-hidden"
+      className="relative isolate h-[min(68svh,560px)] w-full overflow-hidden sm:h-[min(78vh,760px)] lg:h-[min(86vh,900px)]"
       aria-label={t("sliderTitle")}
     >
       <div className="absolute inset-0 overflow-hidden">
@@ -45,26 +45,25 @@ export function Hero() {
             />
           </div>
         ))}
-        {/* Narrower left wash — keeps apron/back logos readable toward mid-frame */}
         <div className="absolute inset-0 bg-gradient-to-r from-brand-ink/80 from-0% via-brand-ink/45 via-[32%] to-transparent to-[62%]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/40 via-transparent to-brand-ink/15" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/45 via-transparent to-brand-ink/15" />
       </div>
 
-      <div className="section-shell relative z-10 flex h-full flex-col justify-end gap-8 py-12 sm:justify-center sm:gap-10 sm:py-16">
+      <div className="section-shell relative z-10 flex h-full flex-col justify-end gap-5 pb-5 pt-10 sm:justify-center sm:gap-8 sm:py-14 lg:gap-10 lg:py-16">
         <div className="max-w-2xl text-white">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-white/85">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-white/85 sm:mb-4 sm:text-sm">
             SM Nettoyage
           </p>
-          <h1 className="font-display text-4xl leading-tight font-semibold tracking-tight sm:text-5xl lg:text-[3.2rem]">
+          <h1 className="font-display text-[1.85rem] leading-tight font-semibold tracking-tight sm:text-5xl lg:text-[3.2rem]">
             {t("heroTagline")}
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
+          <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/90 sm:mt-5 sm:text-lg">
             {t("heroLead")}
           </p>
-          <p className="mt-2 max-w-xl text-base font-semibold text-white sm:text-lg">
+          <p className="mt-1.5 max-w-xl text-sm font-semibold text-white sm:mt-2 sm:text-lg">
             {t("heroDifference")}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-5 flex flex-wrap gap-2.5 sm:mt-8 sm:gap-3">
             <Link
               href="/contact"
               className="btn-primary bg-white text-brand-deep hover:bg-brand-mist"
@@ -77,10 +76,10 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
           <button
             type="button"
-            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/90 text-brand-deep shadow-sm"
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/90 text-brand-deep shadow-sm sm:h-11 sm:w-11"
             aria-label={t("sliderPrev")}
             onClick={() => go(index - 1)}
           >
@@ -88,7 +87,7 @@ export function Hero() {
               <path d="M12.5 4.5 7 10l5.5 5.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
             </svg>
           </button>
-          <div className="flex flex-wrap gap-2" role="tablist">
+          <div className="flex max-w-full flex-wrap gap-1.5 sm:gap-2" role="tablist">
             {HOME_SLIDES.map((slide, i) => (
               <button
                 key={slide.src}
@@ -96,8 +95,8 @@ export function Hero() {
                 role="tab"
                 aria-selected={i === index}
                 aria-label={`${i + 1} / ${total}`}
-                className={`h-2.5 rounded-full transition-all ${
-                  i === index ? "w-8 bg-white" : "w-2.5 bg-white/45 hover:bg-white/75"
+                className={`h-2 rounded-full transition-all sm:h-2.5 ${
+                  i === index ? "w-6 bg-white sm:w-8" : "w-2 bg-white/45 hover:bg-white/75 sm:w-2.5"
                 }`}
                 onClick={() => setIndex(i)}
               />
@@ -105,7 +104,7 @@ export function Hero() {
           </div>
           <button
             type="button"
-            className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/90 text-brand-deep shadow-sm"
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/90 text-brand-deep shadow-sm sm:h-11 sm:w-11"
             aria-label={t("sliderNext")}
             onClick={() => go(index + 1)}
           >

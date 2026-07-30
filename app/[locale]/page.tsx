@@ -2,6 +2,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Hero } from "@/components/Hero";
 import { ServicesShowcase } from "@/components/ServicesShowcase";
+import { ProcessSteps } from "@/components/ProcessSteps";
+import { CoverageBand } from "@/components/CoverageBand";
 import { GoogleReviews } from "@/components/GoogleReviews";
 import { SocialIcons, hasSocialLinks } from "@/components/SocialIcons";
 import { fetchGoogleReviews } from "@/lib/google-reviews";
@@ -22,9 +24,13 @@ export default async function HomePage({ params }: Props) {
 
       <ServicesShowcase />
 
+      <ProcessSteps />
+
+      <CoverageBand />
+
       <section className="border-t border-brand-line/80 py-16 sm:py-20">
         <div className="section-shell grid items-center gap-8 lg:grid-cols-[1.2fr_0.8fr]">
-          <div>
+          <div className="animate-fade-up">
             <h2 className="font-display text-3xl font-semibold text-brand-deep sm:text-4xl">
               {t("introTitle")}
             </h2>
@@ -32,7 +38,7 @@ export default async function HomePage({ params }: Props) {
               {t("introBody")}
             </p>
           </div>
-          <div className="lg:justify-self-end">
+          <div className="animate-fade-up-delay lg:justify-self-end">
             <Link href="/contact" className="btn-primary">
               {t("ctaQuote")}
             </Link>

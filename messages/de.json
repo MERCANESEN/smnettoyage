@@ -66,6 +66,28 @@
       "subtitle": "Sauberere Räume mit unserem Detail-Clean-Rotationssystem",
       "body": "Bei SM Nettoyage folgen wir einem strukturierten Rotationssystem für die Tiefenreinigung aller Leistungen: Wohnungen, Büros, Fenster, Endreinigung nach Bau sowie Vor-/Nachumzug. So gewährleisten wir konsequente, gründliche Hygiene in jedem Raum — abgestimmt auf Ihre Bedürfnisse. Bei SM Nettoyage ist Sauberkeit kein Zufall, sondern Garantie.",
       "cta": "Unsere Dienstleistungen entdecken"
+    },
+    "process": {
+      "title": "So funktioniert’s",
+      "subtitle": "Ein klarer, professioneller Ablauf — von der Anfrage bis zum Einsatz.",
+      "steps": {
+        "1": {
+          "title": "Anfrage",
+          "body": "Beschreiben Sie Ihren Raum und Ihre Bedürfnisse über das Angebots- oder Buchungsformular."
+        },
+        "2": {
+          "title": "Bestätigung",
+          "body": "Wir melden uns rasch, um Termin und Details zu bestätigen."
+        },
+        "3": {
+          "title": "Einsatz",
+          "body": "Unser Team kommt pünktlich, gut ausgerüstet und hinterlässt ein sorgfältiges Ergebnis."
+        }
+      }
+    },
+    "coverage": {
+      "title": "Einsatzgebiet",
+      "body": "Mit Sitz an der {street} in {city} sind wir in der Region Freiburg und Umgebung für Sie da. Wo immer Sie in der Nähe sind — wir kommen."
     }
   },
   "services": {
@@ -102,9 +124,9 @@
   },
   "about": {
     "title": "Über uns",
-    "subtitle": "Ein Reinigungspartner, dem Sie vertrauen können.",
+    "subtitle": "Ein Reinigungspartner, dem Sie vertrauen können — Sauberkeit, Zuverlässigkeit und Sorgfalt bei jedem Einsatz.",
     "storyTitle": "Wer wir sind",
-    "storyBody": "SM Nettoyage basiert auf einem einfachen Versprechen: dort zu sein, wo Sie sind, wann Sie uns brauchen — und Ihren Raum zu pflegen, als wäre er unser eigener. Geschulte Fachkräfte, zuverlässige Termine und Sorgfalt im Detail — Sorgfalt bei jedem Einsatz.",
+    "storyBody": "Bei SM Nettoyage bietet unser erfahrenes und professionelles Team Reinigungsdienstleistungen auf hohem Niveau für Wohnungen, Büros und Gewerberäume. In unserem Team arbeiten Fachkräfte mit CFC-Abschluss, und alle Arbeiten werden mit moderner Ausrüstung und professionellen Reinigungsmethoden ausgeführt. Dank unserem zuverlässigen, sorgfältigen und kundenorientierten Ansatz verwandeln wir Ihre Wohn- und Arbeitsräume in hygienische, gesunde und angenehme Umgebungen. Während Sie sich auf Ihren Alltag konzentrieren, können Sie die Reinigung ruhigen Gewissens uns überlassen.",
     "valuesTitle": "Wofür wir stehen",
     "value1Title": "Zuverlässigkeit",
     "value1Body": "Klare Kommunikation, pünktliche Ankunft und gleichbleibende Qualität.",
@@ -119,6 +141,9 @@
     "title": "Reinigung buchen",
     "subtitle": "Beschreiben Sie Ihren Raum und Ihren Wunschtermin. Wir melden uns zur Bestätigung.",
     "formTitle": "Buchungsanfrage",
+    "asideTitle": "Gut zu wissen",
+    "asideHours": "Kundenservice: {hours}",
+    "asideBody": "Nach Ihrer Anfrage bestätigen wir den Termin per E-Mail oder Telefon. Unser Team arbeitet nach dem Detail-Clean-Ansatz für ein sorgfältiges, zuverlässiges Ergebnis.",
     "name": "Vollständiger Name",
     "email": "E-Mail",
     "phone": "Telefon",
@@ -135,6 +160,8 @@
     "notes": "Bemerkungen",
     "notesPlaceholder": "Zugangscodes, Haustiere, besondere Wünsche…",
     "submit": "Buchung anfragen",
+    "submitEmail": "Per E-Mail senden",
+    "submitWhatsApp": "Via WhatsApp senden",
     "mailSubject": "Buchungsanfrage — SM Nettoyage",
     "errors": {
       "name": "Bitte geben Sie Ihren Namen ein",
@@ -180,20 +207,12 @@
     "title": "Kontakt",
     "subtitle": "Wir sind für Sie da — fordern Sie ein kostenloses Angebot an oder stellen Sie eine Frage.",
     "infoTitle": "Kontakt aufnehmen",
-    "formTitle": "Nachricht senden",
-    "name": "Vollständiger Name",
-    "email": "E-Mail",
-    "phone": "Telefon",
-    "message": "Nachricht",
-    "messagePlaceholder": "Wie können wir helfen?",
-    "submit": "Nachricht senden",
-    "mailSubject": "Kontakt — SM Nettoyage",
-    "errors": {
-      "name": "Bitte geben Sie Ihren Namen ein",
-      "email": "Bitte geben Sie eine gültige E-Mail ein",
-      "phone": "Bitte geben Sie eine gültige Telefonnummer ein",
-      "message": "Bitte geben Sie Ihre Nachricht ein"
-    }
+    "channelsTitle": "Schreiben oder buchen",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": "Auf WhatsApp schreiben",
+    "whatsappPrefill": "Guten Tag, ich möchte gerne ein Angebot…",
+    "emailCta": "E-Mail senden",
+    "bookingCta": "Reinigung buchen"
   },
   "footer": {
     "tagline": "Sorgfalt bei jedem Einsatz",

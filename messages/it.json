@@ -66,6 +66,28 @@
       "subtitle": "Spazi più puliti con il nostro sistema di rotazione Detail-Clean",
       "body": "In SM Nettoyage seguiamo un sistema di rotazione strutturato per la pulizia approfondita di tutti i servizi: case, uffici, vetri, post-cantiere e pre/post trasloco. Così garantiamo un’igiene costante e accurata in ogni ambiente, su misura per le vostre esigenze. Con SM Nettoyage la pulizia non è occasionale: è garantita.",
       "cta": "Scopri i nostri servizi"
+    },
+    "process": {
+      "title": "Come funziona",
+      "subtitle": "Un percorso semplice e professionale — dalla richiesta all’intervento.",
+      "steps": {
+        "1": {
+          "title": "Richiesta",
+          "body": "Descriveteci lo spazio e le esigenze tramite il modulo di preventivo o prenotazione."
+        },
+        "2": {
+          "title": "Conferma",
+          "body": "Vi ricontattiamo rapidamente per confermare l’orario e i dettagli."
+        },
+        "3": {
+          "title": "Intervento",
+          "body": "Il nostro team arriva in orario, attrezzato, e lascia un risultato accurato e affidabile."
+        }
+      }
+    },
+    "coverage": {
+      "title": "Area di intervento",
+      "body": "Con sede in {street}, {city}, operiamo nella regione di Friburgo e dintorni. Ovunque siate nelle vicinanze, ci saremo."
     }
   },
   "services": {
@@ -102,9 +124,9 @@
   },
   "about": {
     "title": "Chi siamo",
-    "subtitle": "Un partner di pulizia di cui potete fidarvi.",
+    "subtitle": "Un partner di pulizia di cui potete fidarvi — pulizia, affidabilità e cura in ogni intervento.",
     "storyTitle": "Chi siamo",
-    "storyBody": "SM Nettoyage nasce da una promessa semplice: essere dove siete, quando ci serve, e curare il vostro spazio come fosse il nostro. Professionisti formati, pianificazione affidabile e attenzione ai dettagli — Cura in ogni intervento.",
+    "storyBody": "In SM Nettoyage, il nostro team esperto e professionale offre servizi di pulizia di alto livello per case, uffici e spazi commerciali. Nel team lavorano specialisti con attestato CFC e tutti i nostri interventi sono eseguiti con attrezzature moderne e metodi di pulizia professionali. Grazie al nostro approccio affidabile, accurato e orientato al cliente, trasformiamo i vostri ambienti di vita e di lavoro in spazi igienici, sani e piacevoli. Mentre vi dedicate alla vita quotidiana, potete affidare la pulizia a noi in tutta tranquillità.",
     "valuesTitle": "I nostri valori",
     "value1Title": "Affidabilità",
     "value1Body": "Comunicazione chiara, puntualità e qualità costante su cui potete contare.",
@@ -119,6 +141,9 @@
     "title": "Prenota una pulizia",
     "subtitle": "Indicateci lo spazio e l’orario preferito. Vi ricontatteremo per confermare.",
     "formTitle": "Richiesta di prenotazione",
+    "asideTitle": "Da sapere",
+    "asideHours": "Servizio clienti: {hours}",
+    "asideBody": "Dopo la richiesta confermiamo l’orario via e-mail o telefono. Il nostro team segue l’approccio Detail-Clean per un risultato accurato e affidabile.",
     "name": "Nome completo",
     "email": "E-mail",
     "phone": "Telefono",
@@ -135,6 +160,8 @@
     "notes": "Note",
     "notesPlaceholder": "Codici di accesso, animali, richieste particolari…",
     "submit": "Richiedi prenotazione",
+    "submitEmail": "Invia per e-mail",
+    "submitWhatsApp": "Invia via WhatsApp",
     "mailSubject": "Richiesta di prenotazione — SM Nettoyage",
     "errors": {
       "name": "Inserite il vostro nome",
@@ -180,20 +207,12 @@
     "title": "Contatti",
     "subtitle": "Siamo qui per aiutarvi — chiedete un preventivo gratuito o fate una domanda.",
     "infoTitle": "Contattaci",
-    "formTitle": "Invia un messaggio",
-    "name": "Nome completo",
-    "email": "E-mail",
-    "phone": "Telefono",
-    "message": "Messaggio",
-    "messagePlaceholder": "Come possiamo aiutarvi?",
-    "submit": "Invia messaggio",
-    "mailSubject": "Contatto — SM Nettoyage",
-    "errors": {
-      "name": "Inserite il vostro nome",
-      "email": "Inserite un’e-mail valida",
-      "phone": "Inserite un numero di telefono valido",
-      "message": "Inserite il vostro messaggio"
-    }
+    "channelsTitle": "Scrivere o prenotare",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": "Scrivi su WhatsApp",
+    "whatsappPrefill": "Buongiorno, vorrei un preventivo…",
+    "emailCta": "Invia un’e-mail",
+    "bookingCta": "Prenota una pulizia"
   },
   "footer": {
     "tagline": "Cura in ogni intervento",

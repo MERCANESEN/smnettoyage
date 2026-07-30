@@ -129,7 +129,26 @@ body {
 
 .section-shell {
   margin-inline: auto;
-  width: min(1120px, calc(100% - 2rem));
+  width: min(1120px, calc(100% - 1.5rem));
+}
+
+@media (min-width: 640px) {
+  .section-shell {
+    width: min(1120px, calc(100% - 2rem));
+  }
+}
+
+.btn-primary,
+.btn-secondary {
+  min-height: 2.75rem;
+}
+
+@media (max-width: 639px) {
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.7rem 1.15rem;
+    font-size: 0.95rem;
+  }
 }
 
 .form-field {
