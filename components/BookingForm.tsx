@@ -102,35 +102,46 @@ export function BookingForm() {
     };
   }
 
-  async function submitByEmail(formEl: HTMLFormElement, form: FormData) {
-    const payload = getPayload(form);
-    const addressLine2 = `${payload.plz} ${payload.town}`;
-    const mailtoBody = [
+  function mailtoBodyFrom(payload: ReturnType<typeof getPayload>, channel: SubmitChannel) {
+    return [
       `Name: ${payload.name}`,
       `Email: ${payload.email}`,
       `Phone: ${payload.phone}`,
       `Service: ${payload.service}`,
       `Street: ${payload.street}`,
-      `PLZ / Town: ${addressLine2}`,
+      `PLZ / Town: ${payload.plz} ${payload.town}`,
       `Additional address: ${payload.addressExtra || "-"}`,
       `Preferred date: ${payload.date}`,
       `Preferred time: ${payload.time}`,
       `Notes: ${payload.notes}`,
+      `Channel: ${channel}`,
     ].join("\n");
+  }
+
+  async function postBooking(
+    payload: ReturnType<typeof getPayload> & { channel: SubmitChannel },
+  ) {
+    const res = await fetch("/api/booking", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    const data = (await res.json().catch(() => ({}))) as {
+      error?: string;
+      errors?: Errors;
+    };
+    return { res, data };
+  }
+
+  async function submitByEmail(formEl: HTMLFormElement, form: FormData) {
+    const base = getPayload(form);
+    const payload = { ...base, channel: "email" as const };
+    const mailtoBody = mailtoBodyFrom(base, "email");
 
     setSubmitting(true);
     setSubmitChannel("email");
     try {
-      const res = await fetch("/api/booking", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      const data = (await res.json().catch(() => ({}))) as {
-        error?: string;
-        errors?: Errors;
-      };
+      const { res, data } = await postBooking(payload);
 
       if (shouldFallbackToMailto(res.status, data.error)) {
         openMailto(t("mailSubject"), mailtoBody);
@@ -157,16 +168,27 @@ export function BookingForm() {
     }
   }
 
-  function submitByWhatsApp(formEl: HTMLFormElement, form: FormData) {
-    const payload = getPayload(form);
-    const serviceId = payload.service as ServiceId;
+  async function submitByWhatsApp(formEl: HTMLFormElement, form: FormData) {
+    const base = getPayload(form);
+    const payload = { ...base, channel: "whatsapp" as const };
+    const serviceId = base.service as ServiceId;
     const serviceLabel = SERVICE_IDS.includes(serviceId)
       ? ts(`${serviceId}.title`)
-      : payload.service;
+      : base.service;
+    const waText = formatBookingWhatsAppMessage(base, serviceLabel);
 
-    openWhatsApp(formatBookingWhatsAppMessage(payload, serviceLabel));
-    formEl.reset();
-    setSuccess(true);
+    setSubmitting(true);
+    setSubmitChannel("whatsapp");
+    try {
+      // Notify inbox first, then open WhatsApp so the client can continue the chat.
+      await postBooking(payload).catch(() => null);
+    } finally {
+      openWhatsApp(waText);
+      formEl.reset();
+      setSuccess(true);
+      setSubmitting(false);
+      setSubmitChannel(null);
+    }
   }
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
@@ -185,7 +207,7 @@ export function BookingForm() {
       submitter?.value === "whatsapp" ? "whatsapp" : "email";
 
     if (channel === "whatsapp") {
-      submitByWhatsApp(formEl, form);
+      await submitByWhatsApp(formEl, form);
       return;
     }
 
@@ -317,8 +339,14 @@ export function BookingForm() {
           className="btn-whatsapp min-h-11 w-full sm:w-auto"
           disabled={submitting}
         >
-          <WhatsAppIcon />
-          {t("submitWhatsApp")}
+          {submitting && submitChannel === "whatsapp" ? (
+            tc("sending")
+          ) : (
+            <>
+              <WhatsAppIcon />
+              {t("submitWhatsApp")}
+            </>
+          )}
         </button>
       </div>
     </form>

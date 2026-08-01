@@ -209,12 +209,23 @@
     "title": "Contatti",
     "subtitle": "Siamo qui per aiutarvi, chiedete un preventivo gratuito o fate una domanda.",
     "infoTitle": "Contattaci",
-    "channelsTitle": "Scrivere o prenotare",
+    "formTitle": "Invia un messaggio",
+    "name": "Nome completo",
+    "email": "E-mail",
+    "phone": "Telefono",
+    "message": "Messaggio",
+    "messagePlaceholder": "Come possiamo aiutarvi?",
+    "submit": "Invia messaggio",
+    "mailSubject": "Contatto : SM Nettoyage",
     "whatsappLabel": "WhatsApp",
     "whatsappCta": "Scrivi su WhatsApp",
     "whatsappPrefill": "Buongiorno, vorrei un preventivo…",
-    "emailCta": "Invia un’e-mail",
-    "bookingCta": "Prenota una pulizia"
+    "errors": {
+      "name": "Inserite il vostro nome",
+      "email": "Inserite un’e-mail valida",
+      "phone": "Inserite un numero di telefono valido",
+      "message": "Inserite il vostro messaggio"
+    }
   },
   "footer": {
     "tagline": "Cura in ogni intervento",

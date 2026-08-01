@@ -1,4 +1,3 @@
-import { COMPANY_WHATSAPP_URL } from "@/lib/constants";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 export function WhatsAppIcon({ className = "h-5 w-5" }: { className?: string }) {
@@ -20,11 +19,9 @@ export function WhatsAppButton({
   prefill,
   className = "",
 }: WhatsAppButtonProps) {
-  const href = prefill ? buildWhatsAppUrl(prefill) : COMPANY_WHATSAPP_URL;
-
   return (
     <a
-      href={href}
+      href={buildWhatsAppUrl(prefill)}
       target="_blank"
       rel="noopener noreferrer"
       className={`btn-whatsapp ${className}`.trim()}

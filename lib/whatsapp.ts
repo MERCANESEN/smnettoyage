@@ -1,12 +1,21 @@
 import { COMPANY_WHATSAPP } from "@/lib/constants";
 
-export function buildWhatsAppUrl(text: string) {
-  const params = new URLSearchParams({ text });
-  return `https://wa.me/${COMPANY_WHATSAPP}?${params.toString()}`;
+/** Opens WhatsApp chat (app or web) with optional prefilled text. */
+export function buildWhatsAppUrl(text?: string) {
+  const params = new URLSearchParams({ phone: COMPANY_WHATSAPP });
+  if (text?.trim()) params.set("text", text);
+  return `https://api.whatsapp.com/send?${params.toString()}`;
 }
 
-export function openWhatsApp(text: string) {
-  window.open(buildWhatsAppUrl(text), "_blank", "noopener,noreferrer");
+export function openWhatsApp(text?: string) {
+  const url = buildWhatsAppUrl(text);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.target = "_blank";
+  anchor.rel = "noopener noreferrer";
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.remove();
 }
 
 export type BookingWhatsAppPayload = {

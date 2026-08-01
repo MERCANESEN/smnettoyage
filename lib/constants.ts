@@ -4,7 +4,7 @@ export const COMPANY_EMAIL = "info@smnettoyage.ch";
 export const COMPANY_PHONE = "+41 78 230 79 54";
 export const COMPANY_PHONE_TEL = "+41782307954";
 export const COMPANY_WHATSAPP = "41782307954";
-export const COMPANY_WHATSAPP_URL = `https://wa.me/${COMPANY_WHATSAPP}`;
+export const COMPANY_WHATSAPP_URL = `https://api.whatsapp.com/send?phone=${COMPANY_WHATSAPP}`;
 export const COMPANY_ADDRESS = {
   street: "Rue des Agges",
   postalCode: "1635",

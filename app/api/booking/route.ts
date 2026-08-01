@@ -21,6 +21,7 @@ type BookingBody = {
   time?: string;
   notes?: string;
   website?: string;
+  channel?: string;
 };
 
 export async function POST(request: Request) {
@@ -56,6 +57,8 @@ export async function POST(request: Request) {
     const date = String(body.date || "").trim();
     const time = String(body.time || "").trim();
     const notes = String(body.notes || "").trim();
+    const channel =
+      body.channel === "whatsapp" ? "whatsapp" : "email";
     const allowedTimes = getBookingTimeSlots();
 
     const errors: Record<string, string> = {};
@@ -84,9 +87,11 @@ export async function POST(request: Request) {
       );
     }
 
+    const channelLabel = channel === "whatsapp" ? "WhatsApp" : "Email";
     const text = [
       "New booking request : SM Nettoyage",
       "",
+      `Channel: ${channelLabel}`,
       `Name: ${name}`,
       `Email: ${email}`,
       `Phone: ${phone}`,
@@ -100,7 +105,7 @@ export async function POST(request: Request) {
     ].join("\n");
 
     await sendBusinessEmail({
-      subject: `Booking : ${name} (${service})`,
+      subject: `Booking (${channelLabel}) : ${name} (${service})`,
       text,
       replyTo: email,
     });

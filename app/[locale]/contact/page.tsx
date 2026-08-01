@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
+import { ContactForm } from "@/components/ContactForm";
 import { SocialIcons } from "@/components/SocialIcons";
 import { WhatsAppButton, WhatsAppIcon } from "@/components/WhatsAppButton";
 import {
@@ -87,6 +87,13 @@ export default async function ContactPage({ params }: Props) {
                 <span className="text-brand-muted">{tc("hoursValue")}</span>
               </p>
             </div>
+
+            <WhatsAppButton
+              label={t("whatsappCta")}
+              prefill={t("whatsappPrefill")}
+              className="min-h-11 w-full sm:w-auto"
+            />
+
             <div>
               <p className="mb-2 text-sm font-semibold text-brand-ink">
                 {tc("followUs")}
@@ -95,32 +102,7 @@ export default async function ContactPage({ params }: Props) {
             </div>
           </aside>
 
-          <div className="min-w-0 space-y-6 rounded-2xl border border-brand-line bg-white p-5 sm:p-8">
-            <h2 className="font-display text-2xl font-semibold text-brand-deep">
-              {t("channelsTitle")}
-            </h2>
-            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <WhatsAppButton
-                label={t("whatsappCta")}
-                prefill={t("whatsappPrefill")}
-                className="min-h-11 w-full sm:w-auto"
-              />
-              <a
-                href={`mailto:${COMPANY_EMAIL}`}
-                className="btn-primary inline-flex min-h-11 w-full items-center justify-center sm:w-auto"
-              >
-                {t("emailCta")}
-              </a>
-            </div>
-            <p className="text-sm text-brand-muted">
-              <Link
-                href="/booking"
-                className="font-semibold text-brand-sky underline-offset-2 hover:underline"
-              >
-                {t("bookingCta")}
-              </Link>
-            </p>
-          </div>
+          <ContactForm />
         </div>
       </section>
     </div>

@@ -209,12 +209,23 @@
     "title": "Kontakt",
     "subtitle": "Wir sind für Sie da, fordern Sie ein kostenloses Angebot an oder stellen Sie eine Frage.",
     "infoTitle": "Kontakt aufnehmen",
-    "channelsTitle": "Schreiben oder buchen",
+    "formTitle": "Nachricht senden",
+    "name": "Vollständiger Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "message": "Nachricht",
+    "messagePlaceholder": "Wie können wir helfen?",
+    "submit": "Nachricht senden",
+    "mailSubject": "Kontakt : SM Nettoyage",
     "whatsappLabel": "WhatsApp",
     "whatsappCta": "Auf WhatsApp schreiben",
     "whatsappPrefill": "Guten Tag, ich möchte gerne ein Angebot…",
-    "emailCta": "E-Mail senden",
-    "bookingCta": "Reinigung buchen"
+    "errors": {
+      "name": "Bitte geben Sie Ihren Namen ein",
+      "email": "Bitte geben Sie eine gültige E-Mail ein",
+      "phone": "Bitte geben Sie eine gültige Telefonnummer ein",
+      "message": "Bitte geben Sie Ihre Nachricht ein"
+    }
   },
   "footer": {
     "tagline": "Sorgfalt bei jedem Einsatz",
